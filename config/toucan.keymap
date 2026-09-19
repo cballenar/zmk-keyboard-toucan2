@@ -74,6 +74,21 @@
         };
     };
 
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer_qwerty {
+            if-layers = <NAV SYM>;
+            then-layer = <MEDIA>;
+        };
+
+        tri_layer_colemak {
+            if-layers = <COL_NAV COL_SYM>;
+            then-layer = <COL_MEDIA>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_timeout_ms = <50>;
