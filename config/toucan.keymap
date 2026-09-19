@@ -130,8 +130,8 @@
             display-name = "MEDIA";
             bindings = <
                 &kp F11     &kp F1          &kp F2       &kp F3       &kp F4       &kp F5                       &kp F6       &kp F7       &kp F8       &kp F9       &kp F10    &kp F12
-                &to COLEMAK &trans          &kp C_FFWD   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                 &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_FFWD   &bt BT_CLR &to COLEMAK
-                &to GAME    &none           &kp C_RW     &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN                 &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &kp C_RW     &none      &to GAME
+                &to COLEMAK &trans          &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                 &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_NEXT   &bt BT_CLR &to COLEMAK
+                &to GAME    &none           &kp C_PREV     &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN                 &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &kp C_PREV     &none      &to GAME
                                                          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2                 &bt BT_SEL 3 &bt BT_SEL 4 &out OUT_TOG
             >;
         };
@@ -200,8 +200,8 @@
             display-name = "COL_MEDIA";
             bindings = <
                 &kp F11  &kp F1          &kp F2       &kp F3       &kp F4       &kp F5                          &kp F6       &kp F7       &kp F8       &kp F9       &kp F10    &kp F12
-                &trans   &trans          &kp C_FFWD   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                    &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_FFWD   &bt BT_CLR &trans
-                &to GAME &to BASE        &kp C_RW     &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN                    &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &kp C_RW     &to BASE   &to GAME
+                &trans   &trans          &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                    &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_NEXT   &bt BT_CLR &trans
+                &to GAME &to BASE        &kp C_PREV     &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN                    &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &kp C_PREV     &to BASE   &to GAME
                                                       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2                    &bt BT_SEL 3 &bt BT_SEL 4 &out OUT_TOG
             >;
         };
