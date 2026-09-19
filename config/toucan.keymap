@@ -111,7 +111,7 @@
             bindings = <
                 &trans &kp N1    &kp N2        &kp N3       &kp N4        &kp N5                                &kp N6    &kp N7        &kp N8      &kp N9          &kp N0    &trans
                 &trans &kp LCTRL &mt LALT LEFT &mt LSHFT UP &mt LGUI DOWN &kp RIGHT                             &kp LEFT  &mt RGUI DOWN &mt RSFT UP &mt RALT RIGHT  &kp RCTRL &trans
-                &trans &trans    &kp CAPS      &kp BSPC     &kp DEL       &kp RET                               &kp SPACE &kp TAB       &kp ESC     &kp CAPS        &trans    &trans
+                &trans &studio_unlock &kp CAPS      &kp BSPC     &kp DEL       &kp RET                               &kp SPACE &kp TAB       &kp ESC     &kp CAPS        &trans    &trans
                                                &trans       &trans        &mo MEDIA                             &mo MEDIA &trans        &trans
             >;
         };
