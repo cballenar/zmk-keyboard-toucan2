@@ -206,3 +206,7 @@
     };
 };
 
+// Override the hardware trackpad touch behavior to route to our custom Layer 11
+&is_touching_processor {
+    bindings = <&mo MOUSE>;
+};
