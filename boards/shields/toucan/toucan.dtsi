@@ -97,19 +97,6 @@
 
 / {
     input_processors {
-        zip_zoom_mapper: zip_zoom_mapper {
-            compatible = "zmk,input-processor-zoom";
-            #input-processor-cells = <0>;
-            event-code = <INPUT_REL_MISC>;
-            sensitivity = <10>;
-#ifdef TOUCAN_WIN_MODE
-            bindings = <&kp LC(MINUS)>, <&kp LC(EQUAL)>;
-#else
-            bindings = <&kp LG(MINUS)>, <&kp LG(EQUAL)>;
-#endif
-            track-remainders;
-        };
-
         is_touching_processor:is_touching_processor {
             compatible = "zmk,input-processor-behaviors";
             #input-processor-cells = <0>;
@@ -145,12 +132,12 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackpad_split>;
-        input-processors = <&zip_xy_scaler 100 100>, <&zip_scroll_scaler 1 20>, <&zip_zoom_mapper>, <&is_touching_processor>, <&swipe_button_mapper>;
+        input-processors = <&zip_xy_scaler 85 100>, <&zip_scroll_scaler 1 24>, <&is_touching_processor>, <&swipe_button_mapper>;
         scroller {
-            layers = <1 2>;
+            layers = <1 2 8 9>;
             input-processors = <
                 &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 1 20
+                &zip_scroll_scaler 1 40
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
             >;
         };

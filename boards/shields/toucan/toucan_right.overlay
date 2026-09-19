@@ -60,18 +60,18 @@
         // timeout-lp1 = <3>; // 60s timeout before entering lp2 state (20 secs per unit) (default was 20s)
         report-rate-lp2 = <640>; // 640ms report rate in LP2 state means 55uA draw rather than default 160ms 174uA draw
         scroll-angle = <30>; // The default angle (about 47 deg) is too big on toucan2 I think
-        sensitivity = <100>;
-        scroll-sensitivity = <100>;
+        sensitivity = <90>;
+        scroll-sensitivity = <90>;
 
         filter-settings=<0x0B>;
-        hold-time = <500>;
+        // hold-time = <500>;
 
-        zoom;
+        // zoom;
         scroll;
         two-finger-tap;
         single-tap;
-        press-and-hold;
-        //swipes;
+        // press-and-hold;
+        swipes;
         three-finger-swipe;
         three-finger-swipe-throttle-ms = <1200>;
         switch-xy;
