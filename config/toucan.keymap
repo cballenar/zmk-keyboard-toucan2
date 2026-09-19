@@ -89,25 +89,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_timeout_ms = <50>;
-
-        // Left thumb combo (Tab + Space) -> Momentary MEDIA layer
-        combo_media_left {
-            timeout-ms = <50>;
-            key-positions = <37 38>;
-            bindings = <&mo MEDIA>;
-        };
-
-        // Right thumb combo (Ret + Del) -> Momentary MEDIA layer
-        combo_media_right {
-            timeout-ms = <50>;
-            key-positions = <39 40>;
-            bindings = <&mo MEDIA>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
