@@ -15,7 +15,7 @@
 #define BSYM       8    // Ballena symbols & keypad
 #define BNAV       9    // Ballena navigation & editing
 
-#define MOUSE      11   // Hardware capacitive trackpad auto-layer
+#define MOUSE      10   // Hardware capacitive trackpad auto-layer
 
 / {
 
