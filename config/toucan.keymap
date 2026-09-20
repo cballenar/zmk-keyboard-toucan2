@@ -11,10 +11,10 @@
 #define GAME       4    // Gaming base
 #define GAME_NUM   5    // Gaming numbers & symbols left
 #define GAME_SYM   6    // Gaming right side symbols
-#define COLEMAK    7    // Colemak-DH base
-#define COL_SYM    8    // Colemak symbols & keypad
-#define COL_NAV    9    // Colemak navigation & editing
-#define COL_MEDIA  10   // Colemak media, F-keys, BT & Layer Select
+#define BALLENA    7    // Ballena base
+#define BAL_SYM    8    // Ballena symbols & keypad
+#define BAL_NAV    9    // Ballena navigation & editing
+#define BAL_MEDIA  10   // Ballena media, F-keys, BT & Layer Select
 #define MOUSE      11   // Hardware capacitive trackpad auto-layer
 
 / {
@@ -112,7 +112,7 @@
             display-name = "MEDIA";
             bindings = <
                 &kp F11        &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                       &kp F6       &kp F7       &kp F8       &kp F9       &kp F10     &kp F12
-                &bootloader    &to COLEMAK  &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                 &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_NEXT   &to COLEMAK &bootloader
+                &bootloader    &to BALLENA  &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                 &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_NEXT   &to BALLENA &bootloader
                 &studio_unlock &to GAME     &kp C_PREV   &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN                 &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &kp C_PREV   &to GAME    &studio_unlock
                                                          &trans       &trans       &trans                       &trans       &trans       &trans
             >;
@@ -148,38 +148,38 @@
             >;
         };
 
-        layer_colemak {
-            display-name = "COLEMAK";
+        layer_ballena {
+            display-name = "BALLENA";
             bindings = <
                 &to BASE  &kp Q        &kp W       &kp F        &kp R        &kp LBKT                               &kp RBKT    &kp L       &kp U       &kp Y       &kp P       &to BASE
                 &kp GRAVE &hml LCTRL A &hml LALT S &hml LSHFT D &hml LGUI T  &mkt LCLK G                            &mkt LCLK H &hmr RGUI N &hmr RSFT E &hmr RALT I &hmr RCTRL O &kp SQT
                 &none     &kp Z        &kp X       &kp C        &kp V        &kp COMMA                              &kp DOT     &kp M       &kp B       &kp K       &kp J       &none
-                                                   &mt_hyper LC(LS(LA(LGUI))) ESC &lt_fast COL_NAV TAB &lt_fast COL_SYM SPACE   &lt_fast COL_SYM RET &lt_fast COL_NAV DEL &mt_hyper LC(LS(LA(LGUI))) BSPC
+                                                   &mt_hyper LC(LS(LA(LGUI))) ESC &lt_fast BAL_NAV TAB &lt_fast BAL_SYM SPACE   &lt_fast BAL_SYM RET &lt_fast BAL_NAV DEL &mt_hyper LC(LS(LA(LGUI))) BSPC
             >;
         };
 
-        layer_col_sym {
-            display-name = "COL_SYM";
+        layer_bal_sym {
+            display-name = "BAL_SYM";
             bindings = <
                 &trans &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp LPAR                 &kp RPAR  &kp AMPS        &kp ASTRK       &kp PRCNT       &kp CARET       &trans
                 &trans &mt LCTRL KP_N1 &mt LALT KP_N2  &mt LSHFT KP_N3 &mt LGUI KP_N4  &kp N5                   &kp N6    &mt LGUI KP_N7  &mt RSFT KP_N8  &mt RALT KP_N9  &mt RCTRL KP_N0 &trans
                 &trans &kp UNDER       &kp MINUS       &kp PLUS        &kp EQUAL       &kp SEMI                 &kp COLON &kp FSLH        &kp BSLH        &kp PIPE        &kp QMARK       &trans
-                                                       &trans          &mo COL_MEDIA   &trans                   &trans    &mo COL_MEDIA   &trans
+                                                       &trans          &mo BAL_MEDIA   &trans                   &trans    &mo BAL_MEDIA   &trans
             >;
         };
 
-        layer_col_nav {
-            display-name = "COL_NAV";
+        layer_bal_nav {
+            display-name = "BAL_NAV";
             bindings = <
                 &trans &kp PRINTSCREEN &kp HOME      &kp PG_UP    &kp PG_DN     &kp END                         &kp HOME  &kp PG_DN     &kp PG_UP    &kp END         &kp PRINTSCREEN &trans
                 &trans &kp LCTRL       &mt LALT LEFT &mt LSHFT UP &mt LGUI DOWN &kp RIGHT                       &kp LEFT  &mt RGUI DOWN &mt RSFT UP  &mt RCTRL RIGHT &kp RCTRL       &trans
                 &trans &kp CAPS        &kp INS       &kp BSPC     &kp DEL       &kp RET                         &kp SPACE &kp TAB       &kp ESC      &kp INS         &kp CAPS        &trans
-                                                     &trans       &trans        &mo COL_MEDIA                   &mo COL_MEDIA &trans    &trans
+                                                     &trans       &trans        &mo BAL_MEDIA                   &mo BAL_MEDIA &trans    &trans
             >;
         };
 
-        layer_col_media {
-            display-name = "COL_MEDIA";
+        layer_bal_media {
+            display-name = "BAL_MEDIA";
             bindings = <
                 &kp F11         &kp F1    &kp F2       &kp F3       &kp F4       &kp F5                          &kp F6       &kp F7       &kp F8       &kp F9       &kp F10    &kp F12
                 &bootloader     &to BASE  &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                    &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_NEXT   &to BASE   &bootloader
