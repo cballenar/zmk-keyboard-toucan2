@@ -17,50 +17,25 @@
 
 #define MOUSE      10   // Hardware capacitive trackpad auto-layer
 
+#define HYP LS(LC(LA(LGUI)))  // Hyper modifier shortcut
+
+// Override default &mt behavior to match our custom tap-hold timings
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <140>;
+    quick-tap-ms = <250>;
+};
+
+// Override default &lt behavior as well
+&lt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <140>;
+    quick-tap-ms = <250>;
+};
+
 / {
 
     behaviors {
-        // Home Row Mods Left (Tuned for UX: 140ms hold, 150ms quick-tap to repeat)
-        hml: homerow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <140>;
-            quick-tap-ms = <250>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        // Home Row Mods Right (Tuned for UX: 140ms hold, 150ms quick-tap to repeat)
-        hmr: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <140>;
-            quick-tap-ms = <250>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        // Thumb Layer-Tap (140ms tap, 150ms quick-tap)
-        lt_fast: layer_tap_fast {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <140>;
-            quick-tap-ms = <250>;
-            bindings = <&mo>, <&kp>;
-        };
-
-        // Hyper-tap (140ms tap, 150ms quick-tap)
-        mt_hyper: mod_tap_hyper {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <140>;
-            quick-tap-ms = <250>;
-            bindings = <&kp>, <&kp>;
-        };
 
         // Mouse-Tap (Hold for Mouse Action, Tap for Keystroke)
         mkt: mouse_key_tap {
@@ -69,7 +44,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <140>;
             quick-tap-ms = <250>;
-            require-prior-idle-ms = <100>;
             bindings = <&mkp>, <&kp>;
         };
     };
@@ -80,10 +54,10 @@
         layer_base {
             display-name = "BASE";
             bindings = <
-                &none     &kp Q        &kp W       &kp E        &kp R        &kp T                                  &kp Y       &kp U       &kp I       &kp O       &kp P           &none
-                &kp GRAVE &hml LCTRL A &hml LALT S &hml LSHFT D &hml LGUI F  &mkt LCLK G                            &mkt LCLK H &hmr RGUI J &hmr RSFT K &hmr RALT L &hmr RCTRL SEMI &kp SQT
-                &none     &kp Z        &kp X       &kp C        &kp V        &kp B                                  &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH        &none
-                                                   &mt_hyper LC(LS(LA(LGUI))) ESC &lt_fast NAV TAB &lt_fast SYM SPACE   &lt_fast SYM RET &lt_fast NAV DEL &mt_hyper LC(LS(LA(LGUI))) BSPC
+                &none     &kp Q        &kp W        &kp E         &kp R        &kp T                            &kp Y        &kp U        &kp I       &kp O       &kp P           &none
+                &kp GRAVE &mt LCTRL A  &mt LALT S   &mt LSHFT D   &mt LGUI F   &mkt LCLK G                      &mkt LCLK H  &mt RGUI J   &mt RSFT K  &mt RALT L  &mt RCTRL SEMI  &kp SQT
+                &none     &kp Z        &kp X        &kp C         &kp V        &kp B                            &kp N        &kp M        &kp COMMA   &kp DOT     &kp FSLH        &none
+                                        &mt HYP ESC &lt NAV TAB   &lt SYM SPACE                                 &lt SYM RET  &lt NAV DEL  &mt HYP BSPC
             >;
         };
 
@@ -100,9 +74,9 @@
         layer_sym {
             display-name = "SYM";
             bindings = <
-                &trans &kp EXCL  &kp AT   &kp HASH  &kp DLLR &kp PRCNT                                          &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
-                &trans &kp LCTRL &kp LALT &kp LSHFT &kp LGUI &trans                                             &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &trans
-                &trans &trans    &trans   &trans    &trans   &trans                                             &kp UNDER &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &trans
+                &trans &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT                                         &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
+                &trans &kp LCTRL &kp LALT &kp LSHFT &kp LGUI  &trans                                            &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &trans
+                &trans &trans    &trans   &trans    &trans    &trans                                            &kp UNDER &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &trans
                                           &trans    &mo MEDIA &trans                                            &trans    &mo MEDIA &trans
             >;
         };
@@ -111,7 +85,7 @@
             display-name = "MEDIA";
             bindings = <
                 &kp F11        &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                       &kp F6       &kp F7       &kp F8       &kp F9       &kp F10     &kp F12
-                &bootloader    &to BALL  &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                 &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_NEXT   &to BASE &bootloader
+                &bootloader    &to BALL     &kp C_NEXT   &kp C_PP     &kp C_VOL_UP &kp C_BRI_UP                 &kp C_BRI_UP &kp C_VOL_UP &kp C_PP     &kp C_NEXT   &to BASE    &bootloader
                 &studio_unlock &to GAME     &kp C_PREV   &kp C_MUTE   &kp C_VOL_DN &kp C_BRI_DN                 &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &kp C_PREV   &to GAME    &studio_unlock
                                                          &trans       &trans       &trans                       &trans       &trans       &trans
             >;
@@ -120,10 +94,10 @@
         layer_game {
             display-name = "GAME";
             bindings = <
-                &kp LALT  &kp Q &kp W &kp E &kp R            &kp T                                              &kp Y       &kp U            &kp I   &kp O   &kp P    &to BASE
-                &kp LCTRL &kp A &kp S &kp D &kp F            &kp G                                              &kp H       &kp J            &kp K   &kp L   &kp SEMI &kp SQT
-                &kp LSHFT &kp Z &kp X &kp C &kp V            &kp B                                              &kp N       &kp M            &kp COMMA &kp DOT &kp FSLH &none
-                                      &lt_fast GSYM ESC &lt_fast GALT TAB &kp SPACE                     &kp RET &lt_fast GALT DEL &lt_fast GSYM BSPC
+                &kp LALT  &kp Q &kp W &kp E         &kp R         &kp T                                         &kp Y     &kp U         &kp I           &kp O   &kp P    &to BASE
+                &kp LCTRL &kp A &kp S &kp D         &kp F         &kp G                                         &kp H     &kp J         &kp K           &kp L   &kp SEMI &kp SQT
+                &kp LSHFT &kp Z &kp X &kp C         &kp V         &kp B                                         &kp N     &kp M         &kp COMMA       &kp DOT &kp FSLH &none
+                                      &lt GSYM ESC  &lt GALT TAB  &kp SPACE                                     &kp RET   &lt GALT DEL  &lt GSYM BSPC
             >;
         };
 
@@ -150,10 +124,10 @@
         layer_ball {
             display-name = "BALL";
             bindings = <
-                &to BASE  &kp Q        &kp W       &kp F        &kp R        &kp LBKT                               &kp RBKT    &kp L       &kp U       &kp Y       &kp P       &to BASE
-                &kp GRAVE &hml LCTRL A &hml LALT S &hml LSHFT D &hml LGUI T  &mkt LCLK G                            &mkt LCLK H &hmr RGUI N &hmr RSFT E &hmr RALT I &hmr RCTRL O &kp SQT
-                &none     &kp Z        &kp X       &kp C        &kp V        &kp COMMA                              &kp DOT     &kp M       &kp B       &kp K       &kp J       &none
-                                                   &mt_hyper LC(LS(LA(LGUI))) ESC &lt_fast BNAV TAB &lt_fast BSYM SPACE   &lt_fast BSYM RET &lt_fast BNAV DEL &mt_hyper LC(LS(LA(LGUI))) BSPC
+                &to BASE  &kp Q         &kp W       &kp F        &kp R         &kp LBKT                         &kp RBKT      &kp L         &kp U                       &kp Y       &kp P       &to BASE
+                &kp GRAVE &mt LCTRL A   &mt LALT S  &mt LSHFT D  &mt LGUI T    &mkt LCLK G                      &mkt LCLK H   &mt RGUI N    &mt RSFT E                  &mt RALT I  &mt RCTRL O &kp SQT
+                &none     &kp Z         &kp X       &kp C        &kp V         &kp COMMA                        &kp DOT       &kp M         &kp B                       &kp K       &kp J       &none
+                                                    &mt HYP ESC  &lt BNAV TAB &lt BSYM SPACE                    &lt BSYM RET  &lt BNAV DEL  &mt HYP BSPC
             >;
         };
 
@@ -163,7 +137,7 @@
                 &trans &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp LPAR                 &kp RPAR  &kp AMPS        &kp ASTRK       &kp PRCNT       &kp CARET       &trans
                 &trans &mt LCTRL KP_N1 &mt LALT KP_N2  &mt LSHFT KP_N3 &mt LGUI KP_N4  &kp N5                   &kp N6    &mt LGUI KP_N7  &mt RSFT KP_N8  &mt RALT KP_N9  &mt RCTRL KP_N0 &trans
                 &trans &kp UNDER       &kp MINUS       &kp PLUS        &kp EQUAL       &kp SEMI                 &kp COLON &kp FSLH        &kp BSLH        &kp PIPE        &kp QMARK       &trans
-                                                       &trans          &mo MEDIA   &trans                   &trans    &mo MEDIA   &trans
+                                                       &trans          &mo MEDIA       &trans                   &trans    &mo MEDIA       &trans
             >;
         };
 
@@ -173,7 +147,7 @@
                 &trans &kp PRINTSCREEN &kp HOME      &kp PG_UP    &kp PG_DN     &kp END                         &kp HOME  &kp PG_DN     &kp PG_UP    &kp END         &kp PRINTSCREEN &trans
                 &trans &kp LCTRL       &mt LALT LEFT &mt LSHFT UP &mt LGUI DOWN &kp RIGHT                       &kp LEFT  &mt RGUI DOWN &mt RSFT UP  &mt RCTRL RIGHT &kp RCTRL       &trans
                 &trans &kp CAPS        &kp INS       &kp BSPC     &kp DEL       &kp RET                         &kp SPACE &kp TAB       &kp ESC      &kp INS         &kp CAPS        &trans
-                                                     &trans       &trans        &mo MEDIA                   &mo MEDIA &trans    &trans
+                                                     &trans       &trans        &mo MEDIA                       &mo MEDIA &trans        &trans
             >;
         };
 
