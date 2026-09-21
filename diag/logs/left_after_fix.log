@@ -1,0 +1,1558 @@
+
+=== opened /dev/cu.usbmodem31201 at +0.0s ===
+--- 37 messages dropped ---
+[00:00:00.289,215] <err> qspi_nor: JEDEC id [85 60 15] expect [c8 40 15]
+uart:~$ [00:00:00.289,703] <dbg> zmk: bvd_init: AIN7 setup returned 0
+uart:~$ *** Booting Zephyr OS build dacab4875df7 ***
+uart:~$ [00:00:00.296,722] <inf> fs_nvs: 8 Sectors of 4096 bytes
+uart:~$ [00:00:00.296,752] <inf> fs_nvs: alloc wra: 0, fe8
+uart:~$ [00:00:00.296,752] <inf> fs_nvs: data wra: 0, 0
+uart:~$ [00:00:00.298,736] <inf> bt_hci_core: HW Platform: Nordic Semiconductor (0x0002)
+uart:~$ [00:00:00.298,736] <inf> bt_hci_core: HW Variant: nRF52x (0x0002)
+uart:~$ [00:00:00.298,767] <inf> bt_hci_core: Firmware: Standard Bluetooth controller (0x00) Version 3.5 Build 0
+uart:~$ [00:00:00.299,163] <inf> bt_hci_core: No ID address. App must call settings_load()
+uart:~$ [00:00:00.299,530] <dbg> zmk: kscan_matrix_init_input_inst: Configured pin 1 on gpio@50000300 for input
+uart:~$ [00:00:00.299,591] <dbg> zmk: kscan_matrix_init_input_inst: Configured pin 19 on gpio@50000000 for input
+uart:~$ [00:00:00.299,621] <dbg> zmk: kscan_matrix_init_input_inst: Configured pin 28 on gpio@50000000 for input
+uart:~$ [00:00:00.319,274] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.319,488] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.319,519] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 2
+uart:~$ [00:00:00.319,732] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.319,763] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,007] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,220] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,251] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,495] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,922] <dbg> bt_gatt: db_hash_gen: Hash: 
+                                  f9 95 4d ec a1 c6 6c 16  4b 1d c2 0a ac d8 25 fc |..M...l. K.....%.
+uart:~$ [00:00:00.320,953] <dbg> bt_gatt: do_db_hash: New Hash: 
+                                  f9 95 4d ec a1 c6 6c 16  4b 1d c2 0a ac d8 25 fc |..M...l. K.....%.
+uart:~$ [00:00:00.320,983] <dbg> bt_gatt: sc_indicate: start 0x0001 end 0xffff
+uart:~$ [00:00:00.320,983] <dbg> bt_gatt: sc_indicate: indicate pending, waiting until complete...
+uart:~$ [00:00:00.334,625] <dbg> bt_gatt: db_hash_store: Database Hash stored
+uart:~$ [00:00:00.334,686] <dbg> zmk: zmk_ble_ready: ready? 0
+uart:~$ [00:00:00.334,686] <dbg> zmk: update_advertising: advertising from 0 to 2
+uart:~$ [00:00:00.335,784] <dbg> zmk: start_scanning: Scanning successfully started
+uart:~$ [00:00:00.335,998] <dbg> zmk: zmk_display_init: 
+uart:~$ [00:00:00.336,029] <dbg> zmk: initialize_display: 
+uart:~$ [00:00:00.336,791] <dbg> zmk: zmk_usb_get_conn_state: state: 5
+uart:~$ [00:00:00.344,726] <dbg> bt_gatt: sc_process: start 0x0001 end 0xffff
+uart:~$ [00:00:00.345,336] <dbg> zmk: zmk_usb_get_conn_state: state: 5
+uart:~$ [00:00:00.378,570] <wrn> ls0xx: Unsupported
+uart:~$ [00:00:00.433,715] <inf> usb_hid: Device resumed
+uart:~$ [00:00:00.433,715] <inf> usb_hid: from suspend
+uart:~$ [00:00:00.433,746] <dbg> zmk: zmk_usb_get_conn_state: state: 6
+uart:~$ [00:00:00.433,807] <inf> usb_hid: Device reset detected
+uart:~$ [00:00:00.433,807] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.433,837] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.433,868] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.433,898] <dbg> zmk: get_selected_transport: No endpoint transports are ready.
+uart:~$ [00:00:00.433,929] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.464,996] <dbg> zmk: split_central_device_found: [DEVICE]: FF:C2:D1:52:E8:50 (random), AD evt type 0, AD data len 25, RSSI -59
+uart:~$ [00:00:00.465,026] <dbg> zmk: split_central_eir_parse: [AD]: 1 data_len 1
+uart:~$ [00:00:00.465,026] <dbg> zmk: split_central_eir_parse: [AD]: 2 data_len 2
+uart:~$ [00:00:00.465,057] <dbg> zmk: split_central_eir_parse: [AD]: 7 data_len 16
+uart:~$ [00:00:00.465,087] <dbg> zmk: split_central_eir_found: Found the split service
+uart:~$ [00:00:00.465,179] <dbg> zmk: zmk_ble_put_peripheral_addr: peripheral slot 0 occupied by 00:00:00:00:00:00 (public)
+uart:~$ [00:00:00.465,270] <dbg> zmk: zmk_ble_put_peripheral_addr: Storing peripheral FF:C2:D1:52:E8:50 (random) in slot 0
+uart:~$ [00:00:00.489,624] <inf> usb_hid: Device configured
+uart:~$ [00:00:00.489,624] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ uart:~$ [00:00:00.489,715] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.489,715] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.489,746] <dbg> zmk: get_selected_transport: Only USB is ready.
+uart:~$ [00:00:00.489,776] <dbg> zmk: zmk_hid_mouse_clear: Mouse report cleared
+uart:~$ [00:00:00.489,776] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:00.489,807] <dbg> zmk: zmk_endpoints_send_report: usage page 0x0C
+uart:~$ [00:00:00.489,868] <inf> zmk: Endpoint changed: USB
+uart:~$ [00:00:00.489,929] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.490,264] <wrn> zmk: Not sending, no active address for current profile
+uart:~$ [00:00:00.490,264] <wrn> zmk: Not sending, no active address for current profile
+uart:~$ [00:00:00.503,967] <dbg> zmk: stop_scanning: Stopping peripheral scanning
+uart:~$ [00:00:00.504,150] <dbg> zmk: split_central_eir_found: Initiating new connection
+uart:~$ [00:00:00.574,127] <dbg> bt_gatt: bt_gatt_connected: conn 0x20007528
+uart:~$ [00:00:00.574,310] <dbg> zmk: connected: Connected thread: 0x200082b0
+uart:~$ [00:00:00.574,340] <dbg> zmk: connected: SKIPPING FOR ROLE 0
+uart:~$ [00:00:00.574,432] <dbg> zmk: split_central_connected: Connected: FF:C2:D1:52:E8:50 (random)
+uart:~$ [00:00:00.574,432] <dbg> zmk: split_central_process_connection: Current security for connection: 1
+uart:~$ [00:00:00.574,554] <dbg> bt_gatt: gatt_find_type_encode: uuid 00000000-0096-7107-c967-c5cfb1c2482a start_handle 0x0001 end_handle 0xffff
+uart:~$ [00:00:00.574,584] <dbg> zmk: split_central_process_connection: New connection params: Interval: 6, Latency: 30, PHY: 1
+uart:~$ [00:00:00.574,615] <dbg> zmk: start_scanning: All devices are connected, scanning is unnecessary
+uart:~$ [00:00:00.575,286] <dbg> zmk: transport_status_changed_cb: Central at 0x91d7c changed status: enabled 1, available 1, connections 2
+uart:~$ [00:00:00.583,740] <dbg> bt_gatt: gatt_find_type_rsp: err 0x00
+uart:~$ [00:00:00.583,770] <dbg> bt_gatt: gatt_find_type_rsp: start_handle 0x001c end_handle 0x0028
+uart:~$ [00:00:00.583,770] <dbg> zmk: split_central_service_discovery_func: [ATTRIBUTE] handle 28
+uart:~$ [00:00:00.583,801] <dbg> zmk: split_central_service_discovery_func: Found split service
+uart:~$ [00:00:00.583,831] <dbg> bt_gatt: gatt_read_type: start_handle 0x0001 end_handle 0xffff
+uart:~$ [00:00:00.598,022] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.598,083] <dbg> bt_gatt: parse_characteristic: handle 0x0002 uuid 2a05 properties 0x20
+uart:~$ [00:00:00.598,114] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 2
+uart:~$ [00:00:00.598,175] <dbg> bt_gatt: parse_characteristic: handle 0x0005 uuid 2b29 properties 0x0a
+uart:~$ [00:00:00.598,205] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 5
+uart:~$ [00:00:00.598,236] <dbg> bt_gatt: gatt_read_type: start_handle 0x0006 end_handle 0xffff
+uart:~$ [00:00:00.628,479] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.628,540] <dbg> bt_gatt: parse_characteristic: handle 0x0007 uuid 2b2a properties 0x02
+uart:~$ [00:00:00.628,570] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 7
+uart:~$ [00:00:00.628,631] <dbg> bt_gatt: parse_characteristic: handle 0x000a uuid 2a00 properties 0x0a
+uart:~$ [00:00:00.628,662] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 10
+uart:~$ [00:00:00.628,692] <dbg> bt_gatt: gatt_read_type: start_handle 0x000b end_handle 0xffff
+uart:~$ [00:00:00.643,035] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.643,096] <dbg> bt_gatt: parse_characteristic: handle 0x000c uuid 2a01 properties 0x02
+uart:~$ [00:00:00.643,127] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 12
+uart:~$ [00:00:00.643,188] <dbg> bt_gatt: parse_characteristic: handle 0x000e uuid 2a04 properties 0x02
+uart:~$ [00:00:00.643,218] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 14
+uart:~$ [00:00:00.643,249] <dbg> bt_gatt: gatt_read_type: start_handle 0x000f end_handle 0xffff
+uart:~$ [00:00:00.665,496] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.665,557] <dbg> bt_gatt: parse_characteristic: handle 0x0011 uuid 2a19 properties 0x12
+uart:~$ [00:00:00.665,588] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 17
+uart:~$ [00:00:00.665,618] <dbg> zmk: split_central_chrc_discovery_func: Found battery level characteristics
+uart:~$ [00:00:00.665,649] <dbg> bt_gatt: gatt_find_info: start_handle 0x0012 end_handle 0xffff
+uart:~$ [00:00:00.665,710] <dbg> zmk: split_central_subscribe: [SUBSCRIBED]
+uart:~$ [00:00:00.665,740] <dbg> bt_gatt: bt_gatt_read: handle 0x0012
+uart:~$ [00:00:00.665,802] <dbg> bt_gatt: parse_characteristic: handle 0x0016 uuid 2a24 properties 0x02
+uart:~$ [00:00:00.665,832] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 22
+uart:~$ [00:00:00.665,863] <dbg> bt_gatt: gatt_read_type: start_handle 0x0017 end_handle 0xffff
+uart:~$ [00:00:00.680,572] <dbg> bt_gatt: gatt_find_info_rsp: err 0x00
+uart:~$ [00:00:00.680,633] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x0012 uuid 2a19
+uart:~$ [00:00:00.680,694] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x0013 uuid 2902
+uart:~$ [00:00:00.680,694] <dbg> bt_gatt: gatt_write_ccc: handle 0x0013 value 0x0001
+uart:~$ [00:00:00.702,911] <dbg> bt_gatt: gatt_read_rsp: err 0x00
+uart:~$ [00:00:00.702,941] <dbg> zmk: split_central_battery_level_read_func: [BATTERY LEVEL READ] data 0x20029f55 length 1
+uart:~$ [00:00:00.702,941] <dbg> zmk: split_central_battery_level_read_func: Battery level: 42
+uart:~$ [00:00:00.702,972] <dbg> zmk: split_central_battery_level_read_func: [READ COMPLETED]
+uart:~$ [00:00:00.703,063] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 42
+uart:~$ [00:00:00.703,094] <dbg> zmk: peripheral_batt_lvl_listener: Peripheral battery level event: 42
+uart:~$ [00:00:00.703,125] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.718,017] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.718,078] <dbg> bt_gatt: parse_characteristic: handle 0x0018 uuid 2a29 properties 0x02
+uart:~$ [00:00:00.718,109] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 24
+uart:~$ [00:00:00.718,170] <dbg> bt_gatt: parse_characteristic: handle 0x001a uuid 2a50 properties 0x02
+uart:~$ [00:00:00.718,200] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 26
+uart:~$ [00:00:00.718,231] <dbg> bt_gatt: gatt_read_type: start_handle 0x001b end_handle 0xffff
+uart:~$ [00:00:00.732,910] <dbg> bt_gatt: gatt_write_ccc_rsp: err 0x00
+uart:~$ [00:00:00.748,077] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.748,168] <dbg> bt_gatt: parse_characteristic: handle 0x001d uuid 00000001-0096-7107-c967-c5cfb1c2482a properties 0x12
+uart:~$ [00:00:00.748,168] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 29
+uart:~$ [00:00:00.748,199] <dbg> zmk: split_central_chrc_discovery_func: Found position state characteristic
+uart:~$ [00:00:00.748,229] <dbg> bt_gatt: gatt_find_info: start_handle 0x001e end_handle 0xffff
+uart:~$ [00:00:00.748,291] <dbg> zmk: split_central_subscribe: [SUBSCRIBED]
+uart:~$ [00:00:00.748,321] <dbg> bt_gatt: gatt_read_type: start_handle 0x001e end_handle 0xffff
+uart:~$ [00:00:00.763,061] <dbg> bt_gatt: gatt_find_info_rsp: err 0x00
+uart:~$ [00:00:00.763,153] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x001e uuid 00000001-0096-7107-c967-c5cfb1c2482a
+uart:~$ [00:00:00.763,183] <dbg> bt_gatt: gatt_find_info: start_handle 0x001f end_handle 0xffff
+uart:~$ [00:00:00.778,076] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.778,167] <dbg> bt_gatt: parse_characteristic: handle 0x0020 uuid 00000002-0096-7107-c967-c5cfb1c2482a properties 0x04
+uart:~$ [00:00:00.778,198] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 32
+uart:~$ [00:00:00.778,228] <dbg> zmk: split_central_chrc_discovery_func: Found run behavior handle
+uart:~$ [00:00:00.778,259] <dbg> bt_gatt: gatt_read_type: start_handle 0x0021 end_handle 0xffff
+uart:~$ [00:00:00.792,999] <dbg> bt_gatt: gatt_find_info_rsp: err 0x00
+uart:~$ [00:00:00.793,090] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x001f uuid 2902
+uart:~$ [00:00:00.793,090] <dbg> bt_gatt: gatt_write_ccc: handle 0x001f value 0x0001
+uart:~$ [00:00:00.808,105] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:00.808,227] <dbg> bt_gatt: parse_characteristic: handle 0x0023 uuid 00000006-0096-7107-c967-c5cfb1c2482a properties 0x10
+uart:~$ [00:00:00.808,258] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 35
+uart:~$ [00:00:00.808,288] <dbg> zmk: split_central_chrc_discovery_func: Found an input characteristic
+uart:~$ [00:00:00.808,288] <dbg> zmk: split_central_chrc_discovery_func: Reserved a slot for the input subscription
+uart:~$ [00:00:00.808,319] <dbg> bt_gatt: gatt_read_type: start_handle 0x0024 end_handle 0xffff
+uart:~$ [00:00:00.837,982] <dbg> zmk: auth_pairing_accept: role 0, open? yes
+uart:~$ [00:00:00.936,798] <inf> zmk: Indicating initial battery status
+uart:~$ [00:00:00.941,375] <dbg> zmk: bvd_sample_fetch: ADC raw 1597 ~ 1403 mV => 4153 mV
+uart:~$ [00:00:00.941,406] <dbg> zmk: bvd_sample_fetch: Percent: 94
+uart:~$ [00:00:00.941,436] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:01.025,787] <dbg> zmk: zmk_battery_update: Setting BAS GATT battery level to 94.
+uart:~$ [00:00:01.037,017] <inf> zmk: Battery level 94, blinking green
+uart:~$ [00:00:01.037,048] <dbg> zmk: led_process_thread: Got a blink item from msgq, color 2, duration 2000
+uart:~$ uart:~$ uart:~$ [00:00:01.685,272] <dbg> bt_gatt: bt_gatt_store_ccc: Stored CCCs for FF:C2:D1:52:E8:50 (random)
+uart:~$ [00:00:01.685,272] <dbg> bt_gatt: bt_gatt_store_ccc:   CCC: NULL
+uart:~$ [00:00:01.685,302] <dbg> bt_gatt: bt_gatt_store_cf: No config for CF
+uart:~$ [00:00:01.685,607] <dbg> bt_gatt: bt_gatt_store_cf: Stored CF for FF:C2:D1:52:E8:50 (random)
+uart:~$ [00:00:01.685,638] <dbg> bt_gatt: bt_gatt_store_cf: Saved data
+uart:~$ [00:00:01.685,699] <dbg> zmk: auth_pairing_complete: SKIPPING FOR ROLE 0
+uart:~$ [00:00:01.685,729] <dbg> bt_gatt: bt_gatt_encrypt_change: conn 0x20007528
+uart:~$ [00:00:01.686,035] <dbg> zmk: security_changed: Security changed: FF:C2:D1:52:E8:50 (random) level 2
+uart:~$ [00:00:01.700,347] <dbg> bt_gatt: gatt_write_ccc_rsp: err 0x00
+uart:~$ [00:00:01.715,332] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.715,362] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 37
+uart:~$ [00:00:01.715,362] <dbg> zmk: split_central_chrc_discovery_func: Found input CCC descriptor
+uart:~$ [00:00:01.715,393] <dbg> zmk: split_central_chrc_discovery_func: Found pending input slot
+uart:~$ [00:00:01.715,393] <dbg> bt_gatt: gatt_read_type: start_handle 0x0026 end_handle 0xffff
+uart:~$ [00:00:01.730,346] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.730,377] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 38
+uart:~$ [00:00:01.730,407] <dbg> zmk: split_central_chrc_discovery_func: Found input CPF descriptor
+uart:~$ [00:00:01.730,407] <dbg> zmk: split_central_chrc_discovery_func: Found pending input slot
+uart:~$ [00:00:01.730,438] <dbg> bt_gatt: gatt_write_ccc: handle 0x0025 value 0x0001
+uart:~$ [00:00:01.730,499] <dbg> zmk: split_central_subscribe: [SUBSCRIBED]
+uart:~$ [00:00:01.730,499] <dbg> bt_gatt: gatt_read_type: start_handle 0x0027 end_handle 0xffff
+uart:~$ [00:00:01.745,330] <dbg> bt_gatt: gatt_write_ccc_rsp: err 0x00
+uart:~$ [00:00:01.760,406] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.760,498] <dbg> bt_gatt: parse_characteristic: handle 0x0027 uuid 00000005-0096-7107-c967-c5cfb1c2482a properties 0x0a
+uart:~$ [00:00:01.760,528] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 39
+uart:~$ [00:00:01.760,559] <dbg> zmk: split_central_chrc_discovery_func: Found select physical layout handle
+uart:~$ [00:00:01.760,589] <dbg> bt_gatt: gatt_read_type: start_handle 0x0028 end_handle 0xffff
+uart:~$ [00:00:01.760,742] <dbg> bt_gatt: bt_gatt_write_without_response_cb: handle 0x0028 length 1
+uart:~$ [00:00:03.537,078] <inf> zmk: Indicating initial connectivity status
+uart:~$ [00:00:03.537,109] <inf> zmk: Finished initializing LED widget
+uart:~$ [00:00:03.553,192] <inf> zmk: Profile 0 open, blinking yellow
+uart:~$ [00:00:03.553,253] <dbg> zmk: led_process_thread: Got a blink item from msgq, color 3, duration 1000
+uart:~$ [00:00:08.180,389] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.180,389] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.180,419] <dbg> zmk: split_central_notify_func: data
+                              00 00 10 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.180,541] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 20
+uart:~$ [00:00:08.180,572] <dbg> zmk: position_state_changed_listener: 20 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.180,633] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 20, binding name: homerow_mods_right
+uart:~$ [00:00:08.180,664] <dbg> zmk: on_hold_tap_binding_pressed: 20 new undecided hold_tap
+uart:~$ [00:00:08.320,892] <dbg> zmk: decide_hold_tap: 20 decided hold-timer (tap-preferred decision moment timer)
+uart:~$ [00:00:08.320,953] <dbg> zmk: on_keymap_binding_pressed: position 20 keycode 0x700E5
+uart:~$ [00:00:08.320,953] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0xE5 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.320,983] <dbg> zmk: zmk_hid_register_mod: Modifier 5 count 1
+uart:~$ [00:00:08.320,983] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x20
+uart:~$ [00:00:08.321,014] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x20
+uart:~$ [00:00:08.321,014] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.330,444] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.330,444] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.330,474] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.330,627] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 20
+uart:~$ [00:00:08.330,657] <dbg> zmk: position_state_changed_listener: 20 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.330,718] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 20, binding name: homerow_mods_right
+uart:~$ [00:00:08.330,780] <dbg> zmk: on_keymap_binding_released: position 20 keycode 0x700E5
+uart:~$ [00:00:08.330,810] <dbg> zmk: wpm_event_listener: key_pressed_count 1 keycode 229
+uart:~$ [00:00:08.330,810] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0xE5 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.330,841] <dbg> zmk: zmk_hid_unregister_mod: Modifier 5 count: 0
+uart:~$ [00:00:08.330,841] <dbg> zmk: zmk_hid_unregister_mod: Modifier 5 released
+uart:~$ [00:00:08.330,871] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x00
+uart:~$ [00:00:08.330,902] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:08.330,902] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.330,963] <dbg> zmk: on_hold_tap_binding_released: 20 cleaning up hold-tap
+uart:~$ [00:00:08.412,872] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.412,902] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.412,933] <dbg> zmk: split_central_notify_func: data
+                              00 00 08 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.413,055] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.413,085] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.413,146] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.413,177] <dbg> zmk: on_hold_tap_binding_pressed: 19 new undecided hold_tap
+uart:~$ [00:00:08.517,883] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.517,913] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.517,944] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.518,096] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.518,127] <dbg> zmk: position_state_changed_listener: 19 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:08.518,188] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.518,280] <dbg> zmk: decide_hold_tap: 19 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:08.518,310] <dbg> zmk: on_keymap_binding_pressed: position 19 keycode 0x7000D
+uart:~$ [00:00:08.518,341] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.518,371] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:08.518,402] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.518,493] <dbg> zmk: on_keymap_binding_released: position 19 keycode 0x7000D
+uart:~$ [00:00:08.518,493] <dbg> zmk: wpm_event_listener: key_pressed_count 2 keycode 13
+uart:~$ [00:00:08.518,524] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.518,524] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:08.518,554] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.519,073] <dbg> zmk: on_hold_tap_binding_released: 19 cleaning up hold-tap
+uart:~$ [00:00:08.577,880] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.577,911] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.577,941] <dbg> zmk: split_central_notify_func: data
+                              00 00 08 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.578,033] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.578,063] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.578,125] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.578,155] <dbg> zmk: on_hold_tap_binding_pressed: 19 new undecided hold_tap
+uart:~$ [00:00:08.578,216] <dbg> zmk: decide_hold_tap: 19 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:08.578,277] <dbg> zmk: on_keymap_binding_pressed: position 19 keycode 0x7000D
+uart:~$ [00:00:08.578,308] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.578,308] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:08.578,338] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.675,384] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.675,384] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.675,415] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.675,506] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.675,537] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.675,598] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.675,659] <dbg> zmk: on_keymap_binding_released: position 19 keycode 0x7000D
+uart:~$ [00:00:08.675,689] <dbg> zmk: wpm_event_listener: key_pressed_count 3 keycode 13
+uart:~$ [00:00:08.675,720] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.675,720] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:08.675,750] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.675,811] <dbg> zmk: on_hold_tap_binding_released: 19 cleaning up hold-tap
+uart:~$ [00:00:08.757,873] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.757,904] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.757,934] <dbg> zmk: split_central_notify_func: data
+                              00 00 08 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.758,026] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.758,056] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.758,117] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.758,148] <dbg> zmk: on_hold_tap_binding_pressed: 19 new undecided hold_tap
+uart:~$ [00:00:08.758,209] <dbg> zmk: decide_hold_tap: 19 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:08.758,270] <dbg> zmk: on_keymap_binding_pressed: position 19 keycode 0x7000D
+uart:~$ [00:00:08.758,300] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.758,331] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:08.758,331] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.817,901] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.817,932] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.817,962] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.818,084] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.818,115] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.818,176] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.818,237] <dbg> zmk: on_keymap_binding_released: position 19 keycode 0x7000D
+uart:~$ [00:00:08.818,237] <dbg> zmk: wpm_event_listener: key_pressed_count 4 keycode 13
+uart:~$ [00:00:08.818,267] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.818,298] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:08.818,298] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.818,359] <dbg> zmk: on_hold_tap_binding_released: 19 cleaning up hold-tap
+uart:~$ [00:00:08.907,867] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.907,897] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.907,928] <dbg> zmk: split_central_notify_func: data
+                              00 00 08 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.908,050] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.908,081] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.908,142] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.908,172] <dbg> zmk: on_hold_tap_binding_pressed: 19 new undecided hold_tap
+uart:~$ [00:00:08.908,264] <dbg> zmk: decide_hold_tap: 19 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:08.908,294] <dbg> zmk: on_keymap_binding_pressed: position 19 keycode 0x7000D
+uart:~$ [00:00:08.908,325] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.908,355] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:08.908,355] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.960,388] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:08.960,418] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:08.960,449] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:08.960,571] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:08.960,601] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:08.960,662] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:08.960,723] <dbg> zmk: on_keymap_binding_released: position 19 keycode 0x7000D
+uart:~$ [00:00:08.960,754] <dbg> zmk: wpm_event_listener: key_pressed_count 5 keycode 13
+uart:~$ [00:00:08.960,754] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:08.960,784] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:08.960,815] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:08.960,845] <dbg> zmk: on_hold_tap_binding_released: 19 cleaning up hold-tap
+uart:~$ [00:00:09.057,861] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.057,891] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.057,922] <dbg> zmk: split_central_notify_func: data
+                              00 00 08 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.058,013] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:09.058,044] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.058,105] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:09.058,135] <dbg> zmk: on_hold_tap_binding_pressed: 19 new undecided hold_tap
+uart:~$ [00:00:09.058,197] <dbg> zmk: decide_hold_tap: 19 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:09.058,258] <dbg> zmk: on_keymap_binding_pressed: position 19 keycode 0x7000D
+uart:~$ [00:00:09.058,288] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.058,288] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:09.058,319] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.117,889] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.117,919] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.117,950] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.118,103] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:09.118,133] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.118,194] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:09.118,255] <dbg> zmk: on_keymap_binding_released: position 19 keycode 0x7000D
+uart:~$ uart:~$ uart:~$ [00:00:09.118,255] <dbg> zmk: wpm_event_listener: key_pressed_count 6 keycode 13
+uart:~$ [00:00:09.118,286] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.118,316] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:09.118,316] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.118,377] <dbg> zmk: on_hold_tap_binding_released: 19 cleaning up hold-tap
+uart:~$ [00:00:09.200,378] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.200,408] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.200,439] <dbg> zmk: split_central_notify_func: data
+                              00 00 08 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.200,561] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:09.200,592] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.200,653] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:09.200,714] <dbg> zmk: on_hold_tap_binding_pressed: 19 new undecided hold_tap
+uart:~$ [00:00:09.200,775] <dbg> zmk: decide_hold_tap: 19 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:09.200,805] <dbg> zmk: on_keymap_binding_pressed: position 19 keycode 0x7000D
+uart:~$ [00:00:09.200,836] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.200,866] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:09.200,866] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.260,437] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.260,437] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.260,467] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.260,620] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 19
+uart:~$ [00:00:09.260,650] <dbg> zmk: position_state_changed_listener: 19 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.260,681] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 19, binding name: homerow_mods_right
+uart:~$ [00:00:09.260,772] <dbg> zmk: on_keymap_binding_released: position 19 keycode 0x7000D
+uart:~$ [00:00:09.260,772] <dbg> zmk: wpm_event_listener: key_pressed_count 7 keycode 13
+uart:~$ [00:00:09.260,803] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0D implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.260,833] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:09.260,833] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.260,925] <dbg> zmk: on_hold_tap_binding_released: 19 cleaning up hold-tap
+uart:~$ [00:00:09.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 21 wpm_update_counter 4
+uart:~$ [00:00:09.350,372] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.350,402] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.350,433] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:09.350,524] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.350,524] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.350,585] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.350,646] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:09.432,891] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.432,922] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.432,952] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.433,074] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.433,105] <dbg> zmk: position_state_changed_listener: 21 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:09.433,135] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.433,258] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:09.433,288] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:09.433,319] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.433,319] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:09.433,349] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.433,441] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:09.433,441] <dbg> zmk: wpm_event_listener: key_pressed_count 8 keycode 15
+uart:~$ [00:00:09.433,471] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.433,502] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:09.433,502] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.434,020] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:09.515,411] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.515,411] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.515,441] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:09.515,594] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.515,594] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.515,655] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.515,716] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:09.515,777] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:09.515,808] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:09.515,838] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.515,869] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:09.515,869] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.575,378] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.575,408] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.575,439] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.575,561] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.575,592] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.575,622] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.575,714] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:09.575,714] <dbg> zmk: wpm_event_listener: key_pressed_count 9 keycode 15
+uart:~$ [00:00:09.575,744] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.575,775] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:09.575,775] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.575,836] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:09.665,374] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.665,405] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.665,435] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:09.665,527] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.665,557] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.665,618] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.665,679] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:09.665,740] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:09.665,771] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:09.665,802] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.665,832] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:09.665,832] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.725,402] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.725,433] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.725,463] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.725,585] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.725,616] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.725,677] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.725,769] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:09.725,769] <dbg> zmk: wpm_event_listener: key_pressed_count 10 keycode 15
+uart:~$ [00:00:09.725,799] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.725,799] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:09.725,830] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.725,891] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:09.815,368] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.815,399] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.815,429] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:09.815,521] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.815,551] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.815,582] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.815,643] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:09.815,704] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:09.815,765] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:09.815,765] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.815,795] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:09.815,795] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.875,396] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.875,396] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.875,427] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:09.875,549] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.875,579] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.875,640] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.875,701] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:09.875,732] <dbg> zmk: wpm_event_listener: key_pressed_count 11 keycode 15
+uart:~$ [00:00:09.875,732] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.875,762] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:09.875,762] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:09.875,823] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:09.965,393] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:09.965,393] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:09.965,423] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:09.965,606] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:09.965,606] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:09.965,667] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:09.965,728] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:09.965,789] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:09.965,820] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:09.965,850] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:09.965,881] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:09.965,881] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:10.017,913] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:10.017,913] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:10.017,944] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:10.018,127] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:10.018,157] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:10.018,188] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:10.018,280] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:10.018,280] <dbg> zmk: wpm_event_listener: key_pressed_count 12 keycode 15
+uart:~$ [00:00:10.018,310] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:10.018,341] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:10.018,341] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:10.018,402] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ uart:~$ uart:~$ [00:00:10.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 28 wpm_update_counter 5
+uart:~$ uart:~$ [00:00:11.015,350] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.015,380] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.015,441] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.015,441] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.015,533] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.015,533] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.015,563] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.015,625] <dbg> zmk: ip_behaviors_handle_event: FOUND A MATCHING CODE, invoke momentary_layer for position 46 with 4 listeners
+uart:~$ [00:00:11.015,655] <dbg> zmk: mo_keymap_binding_pressed: position 46 layer 10
+uart:~$ [00:00:11.015,655] <dbg> zmk: set_layer_state: layer_changed: layer 10 state 1
+uart:~$ [00:00:11.052,825] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.052,856] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.052,917] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.052,947] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ uart:~$ [00:00:11.053,009] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,039] <dbg> zmk: scale_val: scaled -66 with 85/100 to -56 with remainder -10
+uart:~$ [00:00:11.053,039] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,070] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,100] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,314] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.053,314] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.053,375] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.053,405] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.053,466] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,497] <dbg> zmk: scale_val: scaled -12 with 85/100 to -10 with remainder -20
+uart:~$ [00:00:11.053,497] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,527] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,558] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.053,558] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to -56/-10
+uart:~$ [00:00:11.053,619] <dbg> zmk: zmk_hid_mouse_scroll_set: Mouse scroll set to 0/0
+uart:~$ [00:00:11.053,619] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to 0/0
+uart:~$ [00:00:11.067,840] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.067,840] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.067,932] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.067,932] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.068,023] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,023] <dbg> zmk: scale_val: scaled -64 with 85/100 to -54 with remainder -50
+uart:~$ [00:00:11.068,054] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,054] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,084] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,298] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.068,328] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.068,389] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.068,389] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.068,481] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,481] <dbg> zmk: scale_val: scaled -1 with 85/100 to -1 with remainder -5
+uart:~$ [00:00:11.068,511] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,542] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,542] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.068,572] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to -54/-1
+uart:~$ [00:00:11.068,634] <dbg> zmk: zmk_hid_mouse_scroll_set: Mouse scroll set to 0/0
+uart:~$ [00:00:11.068,634] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to 0/0
+uart:~$ [00:00:11.082,824] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.082,855] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.082,916] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.082,946] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.083,007] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,038] <dbg> zmk: scale_val: scaled -58 with 85/100 to -49 with remainder -80
+uart:~$ [00:00:11.083,038] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,068] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,099] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,312] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.083,312] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.083,374] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.083,404] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.083,465] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,496] <dbg> zmk: scale_val: scaled 9 with 85/100 to 7 with remainder 60
+uart:~$ [00:00:11.083,526] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,526] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,557] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.083,557] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to -49/7
+uart:~$ [00:00:11.083,618] <dbg> zmk: zmk_hid_mouse_scroll_set: Mouse scroll set to 0/0
+uart:~$ [00:00:11.083,648] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to 0/0
+uart:~$ [00:00:11.090,332] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.090,332] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.090,423] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.090,454] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.090,515] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.090,545] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.090,545] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.090,576] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.090,606] <dbg> zmk: ip_behaviors_handle_event: FOUND A MATCHING CODE, invoke key_press for position 50 with 4 listeners
+uart:~$ [00:00:11.090,637] <dbg> zmk: on_keymap_binding_pressed: position 50 keycode 0x9070050
+uart:~$ [00:00:11.090,789] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.090,820] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.090,881] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.090,911] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.090,942] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x50 implicit_mods 0x09 explicit_mods 0x00
+uart:~$ [00:00:11.090,972] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x09
+uart:~$ [00:00:11.090,972] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:11.091,064] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.091,094] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.091,125] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.091,125] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.091,247] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.091,278] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.091,339] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.091,369] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.091,430] <dbg> zmk: ip_behaviors_handle_event: FOUND A MATCHING CODE, invoke key_press for position 50 with 4 listeners
+uart:~$ [00:00:11.091,491] <dbg> zmk: on_keymap_binding_released: position 50 keycode 0x9070050
+uart:~$ [00:00:11.091,491] <dbg> zmk: wpm_event_listener: key_pressed_count 1 keycode 80
+uart:~$ [00:00:11.091,522] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x50 implicit_mods 0x09 explicit_mods 0x00
+uart:~$ [00:00:11.091,522] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:11.091,552] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:11.091,735] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.091,766] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.091,796] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.091,827] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.092,071] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,102] <dbg> zmk: scale_val: scaled -54 with 85/100 to -46 with remainder -70
+uart:~$ [00:00:11.092,102] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,132] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,163] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,224] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,224] <dbg> zmk: scale_val: scaled 0 with 85/100 to 0 with remainder 60
+uart:~$ [00:00:11.092,254] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,254] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,285] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.092,285] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to -46/0
+uart:~$ [00:00:11.093,048] <dbg> zmk: zmk_hid_mouse_scroll_set: Mouse scroll set to 0/0
+uart:~$ [00:00:11.093,048] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to 0/0
+uart:~$ [00:00:11.105,316] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.105,346] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.105,438] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.105,438] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.105,529] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.105,529] <dbg> zmk: scale_val: scaled -45 with 85/100 to -38 with remainder -95
+uart:~$ [00:00:11.105,560] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.105,560] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.105,590] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.105,804] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.105,834] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.105,895] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.105,895] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.105,987] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.105,987] <dbg> zmk: scale_val: scaled 36 with 85/100 to 31 with remainder 20
+uart:~$ [00:00:11.106,018] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.106,018] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.106,048] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.106,079] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to -38/31
+uart:~$ [00:00:11.106,109] <dbg> zmk: zmk_hid_mouse_scroll_set: Mouse scroll set to 0/0
+uart:~$ [00:00:11.106,140] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to 0/0
+uart:~$ [00:00:11.120,330] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.120,361] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.120,513] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.120,544] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.120,941] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.120,819] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.120,819] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.120,880] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.120,910] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.120,941] <dbg> zmk: scale_val: scaled -32 with 85/100 to -28 with remainder -15
+uart:~$ [00:00:11.120,971] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.120,971] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.121,002] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.121,063] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.121,093] <dbg> zmk: scale_val: scaled 50 with 85/100 to 42 with remainder 70
+uart:~$ [00:00:11.121,093] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.121,124] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.121,124] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.121,154] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to -28/42
+uart:~$ [00:00:11.121,215] <dbg> zmk: zmk_hid_mouse_scroll_set: Mouse scroll set to 0/0
+uart:~$ [00:00:11.121,215] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to 0/0
+uart:~$ [00:00:11.135,345] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.135,345] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.135,437] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.135,467] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.135,528] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.135,559] <dbg> zmk: scale_val: scaled -5 with 85/100 to -4 with remainder -40
+uart:~$ [00:00:11.135,589] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.135,589] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.135,620] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.135,833] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.135,864] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.135,955] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.135,986] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.136,047] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.136,077] <dbg> zmk: scale_val: scaled 77 with 85/100 to 66 with remainder 15
+uart:~$ [00:00:11.136,077] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.136,108] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.136,138] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.136,138] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to -4/66
+uart:~$ [00:00:11.136,199] <dbg> zmk: zmk_hid_mouse_scroll_set: Mouse scroll set to 0/0
+uart:~$ [00:00:11.136,199] <dbg> zmk: zmk_hid_mouse_movement_set: Mouse movement set to 0/0
+uart:~$ [00:00:11.142,913] <dbg> bt_gatt: bt_gatt_notification: handle 0x0024 length 8
+uart:~$ [00:00:11.142,913] <dbg> zmk: peripheral_input_event_notify_cb: [INPUT EVENT] data 0x20029f57 length 8
+uart:~$ [00:00:11.143,005] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 0
+uart:~$ [00:00:11.143,035] <dbg> zmk: zmk_input_split_report_peripheral_event: Got peripheral event for 0!
+uart:~$ [00:00:11.143,249] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.143,280] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.143,280] <dbg> zmk: apply_config: LISTENER INDEX: 0
+uart:~$ [00:00:11.143,341] <dbg> zmk: ip_behaviors_handle_event: FOUND A MATCHING CODE, invoke momentary_layer for position 46 with 4 listeners
+uart:~$ [00:00:11.143,371] <dbg> zmk: mo_keymap_binding_released: position 46 layer 10
+uart:~$ [00:00:11.143,402] <dbg> zmk: set_layer_state: layer_changed: layer 10 state 0
+uart:~$ [00:00:11.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 12 wpm_update_counter 1
+uart:~$ [00:00:11.487,884] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:11.487,915] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:11.487,915] <dbg> zmk: split_central_notify_func: data
+                              40 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |@....... ........
+uart:~$ [00:00:11.488,098] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:11.488,128] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:11.488,189] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:11.488,220] <dbg> zmk: on_keymap_binding_pressed: position 6 keycode 0x7001C
+uart:~$ [00:00:11.488,250] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:11.488,250] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:11.488,281] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:11.570,373] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:11.570,404] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:11.570,434] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:11.570,526] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:11.570,556] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:11.570,617] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:11.570,648] <dbg> zmk: on_keymap_binding_released: position 6 keycode 0x7001C
+uart:~$ [00:00:11.570,678] <dbg> zmk: wpm_event_listener: key_pressed_count 2 keycode 28
+uart:~$ [00:00:11.570,709] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:11.570,709] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:11.570,739] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:11.660,400] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:11.660,400] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:11.660,430] <dbg> zmk: split_central_notify_func: data
+                              40 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |@....... ........
+uart:~$ [00:00:11.660,552] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:11.660,583] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:11.660,644] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:11.660,675] <dbg> zmk: on_keymap_binding_pressed: position 6 keycode 0x7001C
+uart:~$ [00:00:11.660,705] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:11.660,705] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:11.660,736] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:11.772,888] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:11.772,888] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:11.772,918] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:11.773,040] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:11.773,071] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:11.773,132] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:11.773,162] <dbg> zmk: on_keymap_binding_released: position 6 keycode 0x7001C
+uart:~$ [00:00:11.773,162] <dbg> zmk: wpm_event_listener: key_pressed_count 3 keycode 28
+uart:~$ [00:00:11.773,193] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:11.773,223] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:11.773,223] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:12.300,476] <dbg> zmk: wpm_work_handler: Raised WPM state changed 18 wpm_update_counter 2
+uart:~$ uart:~$ uart:~$ [00:00:13.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 11 wpm_update_counter 3
+uart:~$ uart:~$ [00:00:14.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 9 wpm_update_counter 4
+uart:~$ uart:~$ [00:00:15.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 7 wpm_update_counter 5
+uart:~$ uart:~$ [00:00:16.300,292] <dbg> zmk: wpm_work_handler: Raised WPM state changed 0 wpm_update_counter 1
+uart:~$ uart:~$ [00:00:21.762,878] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:21.762,908] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:21.762,939] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:21.763,031] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:21.763,061] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:21.763,122] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:21.763,153] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:21.837,890] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:21.837,890] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:21.837,921] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:21.838,043] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:21.838,043] <dbg> zmk: position_state_changed_listener: 21 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:21.838,104] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:21.838,195] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:21.838,256] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:21.838,287] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:21.838,287] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:21.838,317] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:21.838,409] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:21.838,409] <dbg> zmk: wpm_event_listener: key_pressed_count 1 keycode 15
+uart:~$ [00:00:21.838,439] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:21.838,439] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:21.838,470] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:21.839,294] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:21.905,395] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:21.905,395] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:21.905,426] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:21.905,548] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:21.905,578] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:21.905,639] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:21.905,700] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:21.905,761] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:21.905,792] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:21.905,822] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:21.905,853] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:21.905,853] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:21.980,377] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:21.980,407] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:21.980,438] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:21.980,560] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:21.980,590] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:21.980,621] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:21.980,712] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:21.980,712] <dbg> zmk: wpm_event_listener: key_pressed_count 2 keycode 15
+uart:~$ [00:00:21.980,743] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:21.980,773] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:21.980,773] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:21.980,834] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:22.055,389] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.055,419] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.055,450] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:22.055,541] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:22.055,572] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.055,633] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:22.055,694] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:22.055,755] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:22.055,786] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:22.055,816] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:22.055,847] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:22.055,847] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:22.130,371] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.130,401] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.130,432] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.130,554] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:22.130,584] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.130,645] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:22.130,706] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:22.130,737] <dbg> zmk: wpm_event_listener: key_pressed_count 3 keycode 15
+uart:~$ [00:00:22.130,767] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:22.130,767] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:22.130,798] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:22.130,859] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:22.220,367] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.220,397] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.220,428] <dbg> zmk: split_central_notify_func: data
+                              00 00 20 00 00 00 00 00  00 00 00 00 00 00 00 00 |.. ..... ........
+uart:~$ [00:00:22.220,520] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:22.220,550] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.220,611] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:22.220,642] <dbg> zmk: on_hold_tap_binding_pressed: 21 new undecided hold_tap
+uart:~$ [00:00:22.220,733] <dbg> zmk: decide_hold_tap: 21 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:22.220,764] <dbg> zmk: on_keymap_binding_pressed: position 21 keycode 0x7000F
+uart:~$ [00:00:22.220,794] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:22.220,794] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:22.220,825] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:22.280,395] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.280,395] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.280,426] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.280,548] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 21
+uart:~$ [00:00:22.280,578] <dbg> zmk: position_state_changed_listener: 21 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.280,639] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 21, binding name: homerow_mods_right
+uart:~$ [00:00:22.280,700] <dbg> zmk: on_keymap_binding_released: position 21 keycode 0x7000F
+uart:~$ [00:00:22.280,731] <dbg> zmk: wpm_event_listener: key_pressed_count 4 keycode 15
+uart:~$ [00:00:22.280,761] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0F implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:22.280,761] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:22.280,792] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:22.280,853] <dbg> zmk: on_hold_tap_binding_released: 21 cleaning up hold-tap
+uart:~$ [00:00:22.300,354] <dbg> zmk: wpm_work_handler: Raised WPM state changed 24 wpm_update_counter 2
+uart:~$ [00:00:22.520,416] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.520,446] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.520,477] <dbg> zmk: split_central_notify_func: data
+                              00 08 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.520,629] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:22.520,660] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.520,690] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ [00:00:22.565,399] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.565,429] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.565,460] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.565,582] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:22.565,612] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.565,673] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ uart:~$ uart:~$ [00:00:22.670,440] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.670,440] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.670,471] <dbg> zmk: split_central_notify_func: data
+                              00 08 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.670,562] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:22.670,593] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.670,654] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ [00:00:22.715,393] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.715,393] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.715,423] <dbg> zmk: split_central_notify_func: data
+                              00 08 80 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.715,515] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 23
+uart:~$ [00:00:22.715,545] <dbg> zmk: position_state_changed_listener: 23 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.715,606] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 23, binding name: key_press
+uart:~$ [00:00:22.715,637] <dbg> zmk: on_keymap_binding_pressed: position 23 keycode 0x70034
+uart:~$ [00:00:22.715,667] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x34 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:22.715,698] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:22.715,698] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:22.722,869] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.722,900] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.722,930] <dbg> zmk: split_central_notify_func: data
+                              00 08 80 00 08 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.723,022] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 35
+uart:~$ [00:00:22.723,052] <dbg> zmk: position_state_changed_listener: 35 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.723,114] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 35, binding name: none
+uart:~$ uart:~$ uart:~$ [00:00:22.782,867] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.782,897] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.782,928] <dbg> zmk: split_central_notify_func: data
+                              00 00 80 00 08 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.783,020] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:22.783,050] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.783,111] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ [00:00:22.820,373] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.820,404] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.820,434] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 08 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.820,587] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 23
+uart:~$ [00:00:22.820,617] <dbg> zmk: position_state_changed_listener: 23 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.820,678] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 23, binding name: key_press
+uart:~$ [00:00:22.820,709] <dbg> zmk: on_keymap_binding_released: position 23 keycode 0x70034
+uart:~$ [00:00:22.820,739] <dbg> zmk: wpm_event_listener: key_pressed_count 5 keycode 52
+uart:~$ [00:00:22.820,770] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x34 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:22.820,770] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:22.820,800] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:22.932,891] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:22.932,922] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:22.932,922] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:22.933,044] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 35
+uart:~$ [00:00:22.933,074] <dbg> zmk: position_state_changed_listener: 35 bubble (no undecided hold_tap active)
+uart:~$ [00:00:22.933,135] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 35, binding name: none
+uart:~$ uart:~$ uart:~$ [00:00:23.300,292] <dbg> zmk: wpm_work_handler: Raised WPM state changed 20 wpm_update_counter 3
+uart:~$ [00:00:23.397,888] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.397,918] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.397,949] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 02 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.398,040] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:23.398,071] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.398,132] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:23.398,162] <dbg> zmk: on_hold_tap_binding_pressed: 41 new undecided hold_tap
+uart:~$ uart:~$ [00:00:23.450,378] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.450,408] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.450,439] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 03 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.450,561] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 40
+uart:~$ [00:00:23.450,622] <dbg> zmk: position_state_changed_listener: 41 capturing 40 down event
+uart:~$ [00:00:23.450,653] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:23.532,897] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.532,897] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.532,928] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 01 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.533,020] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:23.533,050] <dbg> zmk: position_state_changed_listener: 41 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:23.533,111] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:23.533,203] <dbg> zmk: decide_hold_tap: 41 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:23.533,264] <dbg> zmk: on_keymap_binding_pressed: position 41 keycode 0x7002A
+uart:~$ [00:00:23.533,294] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:23.533,294] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:23.533,325] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.533,416] <dbg> zmk: release_captured_events: Releasing key position event for position 40 pressed
+uart:~$ [00:00:23.533,416] <dbg> zmk: position_state_changed_listener: 40 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.533,477] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 40, binding name: layer_tap_fast
+uart:~$ [00:00:23.533,538] <dbg> zmk: on_hold_tap_binding_pressed: 40 new undecided hold_tap
+uart:~$ [00:00:23.533,599] <dbg> zmk: on_keymap_binding_released: position 41 keycode 0x7002A
+uart:~$ [00:00:23.533,630] <dbg> zmk: wpm_event_listener: key_pressed_count 6 keycode 42
+uart:~$ [00:00:23.533,630] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:23.533,660] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:23.533,660] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.534,271] <dbg> zmk: on_hold_tap_binding_released: 41 cleaning up hold-tap
+uart:~$ [00:00:23.562,927] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.562,927] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.562,957] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 80 01 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.563,110] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 39
+uart:~$ [00:00:23.563,140] <dbg> zmk: position_state_changed_listener: 40 capturing 39 down event
+uart:~$ [00:00:23.563,171] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:23.585,388] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.585,418] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.585,449] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 80 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.585,540] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 40
+uart:~$ [00:00:23.585,571] <dbg> zmk: position_state_changed_listener: 40 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:23.585,632] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 40, binding name: layer_tap_fast
+uart:~$ [00:00:23.585,723] <dbg> zmk: decide_hold_tap: 40 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:23.585,784] <dbg> zmk: on_keymap_binding_pressed: position 40 keycode 0x7004C
+uart:~$ [00:00:23.585,815] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x4C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:23.585,815] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:23.585,845] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.585,937] <dbg> zmk: release_captured_events: Releasing key position event for position 39 pressed
+uart:~$ [00:00:23.585,968] <dbg> zmk: position_state_changed_listener: 39 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.585,998] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 39, binding name: layer_tap_fast
+uart:~$ [00:00:23.586,059] <dbg> zmk: on_hold_tap_binding_pressed: 39 new undecided hold_tap
+uart:~$ [00:00:23.586,120] <dbg> zmk: on_keymap_binding_released: position 40 keycode 0x7004C
+uart:~$ [00:00:23.586,151] <dbg> zmk: wpm_event_listener: key_pressed_count 7 keycode 76
+uart:~$ [00:00:23.586,181] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x4C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:23.586,212] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:23.586,212] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.586,425] <dbg> zmk: on_hold_tap_binding_released: 40 cleaning up hold-tap
+uart:~$ [00:00:23.690,399] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.690,429] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.690,460] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.690,582] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 39
+uart:~$ [00:00:23.690,612] <dbg> zmk: position_state_changed_listener: 39 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:23.690,673] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 39, binding name: layer_tap_fast
+uart:~$ [00:00:23.690,765] <dbg> zmk: decide_hold_tap: 39 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:23.690,826] <dbg> zmk: on_keymap_binding_pressed: position 39 keycode 0x70028
+uart:~$ [00:00:23.690,856] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x28 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:23.690,856] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:23.690,887] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.690,948] <dbg> zmk: on_keymap_binding_released: position 39 keycode 0x70028
+uart:~$ [00:00:23.690,979] <dbg> zmk: wpm_event_listener: key_pressed_count 8 keycode 40
+uart:~$ [00:00:23.691,009] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x28 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:23.691,009] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:23.691,040] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.691,375] <dbg> zmk: on_hold_tap_binding_released: 39 cleaning up hold-tap
+uart:~$ [00:00:23.705,383] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.705,413] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.705,444] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 02 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.705,535] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:23.705,566] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.705,627] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:23.705,688] <dbg> zmk: on_hold_tap_binding_pressed: 41 new undecided hold_tap
+uart:~$ [00:00:23.742,889] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.742,889] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.742,919] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 03 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ uart:~$ uart:~$ [00:00:23.743,041] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 40
+uart:~$ [00:00:23.743,072] <dbg> zmk: position_state_changed_listener: 41 capturing 40 down event
+uart:~$ [00:00:23.743,103] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:23.810,394] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.810,394] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.810,424] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 80 03 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.810,546] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 39
+uart:~$ [00:00:23.810,607] <dbg> zmk: position_state_changed_listener: 41 capturing 39 down event
+uart:~$ [00:00:23.810,607] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:23.845,825] <dbg> zmk: decide_hold_tap: 41 decided hold-timer (tap-preferred decision moment timer)
+uart:~$ [00:00:23.845,855] <dbg> zmk: on_keymap_binding_pressed: position 41 keycode 0x70700E3
+uart:~$ [00:00:23.845,886] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0xE3 implicit_mods 0x00 explicit_mods 0x07
+uart:~$ [00:00:23.845,886] <dbg> zmk: zmk_hid_register_mod: Modifier 3 count 1
+uart:~$ [00:00:23.845,916] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x08
+uart:~$ [00:00:23.845,916] <dbg> zmk: zmk_hid_register_mod: Modifier 0 count 1
+uart:~$ [00:00:23.845,947] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x09
+uart:~$ [00:00:23.845,947] <dbg> zmk: zmk_hid_register_mod: Modifier 1 count 1
+uart:~$ [00:00:23.845,977] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x0B
+uart:~$ [00:00:23.845,977] <dbg> zmk: zmk_hid_register_mod: Modifier 2 count 1
+uart:~$ [00:00:23.846,008] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x0F
+uart:~$ [00:00:23.846,008] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x0F
+uart:~$ [00:00:23.846,038] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.846,130] <dbg> zmk: release_captured_events: Releasing key position event for position 40 pressed
+uart:~$ [00:00:23.846,160] <dbg> zmk: position_state_changed_listener: 40 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.846,221] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 40, binding name: layer_tap_fast
+uart:~$ [00:00:23.846,282] <dbg> zmk: on_hold_tap_binding_pressed: 40 new undecided hold_tap
+uart:~$ [00:00:23.856,475] <dbg> zmk: release_captured_events: Releasing key position event for position 39 pressed
+uart:~$ [00:00:23.856,536] <dbg> zmk: position_state_changed_listener: 40 capturing 39 down event
+uart:~$ [00:00:23.856,536] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:23.877,899] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.877,929] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.877,929] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 80 01 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.878,112] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:23.878,143] <dbg> zmk: position_state_changed_listener: 40 bubbling 41 up event
+uart:~$ [00:00:23.878,204] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:23.878,295] <dbg> zmk: on_keymap_binding_released: position 41 keycode 0x70700E3
+uart:~$ [00:00:23.878,295] <dbg> zmk: wpm_event_listener: key_pressed_count 9 keycode 227
+uart:~$ [00:00:23.878,326] <dbg> zmk: keycode_state_changed_listener: 40 capturing 0xE3 up event
+uart:~$ [00:00:23.878,356] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:23.878,387] <dbg> zmk: on_hold_tap_binding_released: 41 cleaning up hold-tap
+uart:~$ [00:00:23.883,483] <dbg> zmk: decide_hold_tap: 40 decided hold-timer (tap-preferred decision moment timer)
+uart:~$ [00:00:23.883,514] <dbg> zmk: mo_keymap_binding_pressed: position 40 layer 1
+uart:~$ [00:00:23.883,544] <dbg> zmk: set_layer_state: layer_changed: layer 1 state 1
+uart:~$ [00:00:23.883,605] <dbg> zmk: release_captured_events: Releasing key position event for position 39 pressed
+uart:~$ [00:00:23.883,636] <dbg> zmk: position_state_changed_listener: 39 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.883,697] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 1 position: 39, binding name: momentary_layer
+uart:~$ [00:00:23.883,728] <dbg> zmk: mo_keymap_binding_pressed: position 39 layer 3
+uart:~$ [00:00:23.883,758] <dbg> zmk: set_layer_state: layer_changed: layer 3 state 1
+uart:~$ [00:00:23.883,819] <dbg> zmk: release_captured_events: Releasing mods changed event 0xE3 released
+uart:~$ [00:00:23.883,850] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0xE3 implicit_mods 0x00 explicit_mods 0x07
+uart:~$ [00:00:23.883,850] <dbg> zmk: zmk_hid_unregister_mod: Modifier 3 count: 0
+uart:~$ [00:00:23.883,880] <dbg> zmk: zmk_hid_unregister_mod: Modifier 3 released
+uart:~$ [00:00:23.883,880] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x07
+uart:~$ [00:00:23.883,911] <dbg> zmk: zmk_hid_unregister_mod: Modifier 0 count: 0
+uart:~$ [00:00:23.883,911] <dbg> zmk: zmk_hid_unregister_mod: Modifier 0 released
+uart:~$ [00:00:23.883,941] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x06
+uart:~$ [00:00:23.883,941] <dbg> zmk: zmk_hid_unregister_mod: Modifier 1 count: 0
+uart:~$ [00:00:23.883,972] <dbg> zmk: zmk_hid_unregister_mod: Modifier 1 released
+uart:~$ [00:00:23.883,972] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x04
+uart:~$ [00:00:23.884,002] <dbg> zmk: zmk_hid_unregister_mod: Modifier 2 count: 0
+uart:~$ [00:00:23.884,002] <dbg> zmk: zmk_hid_unregister_mod: Modifier 2 released
+uart:~$ [00:00:23.884,033] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x00
+uart:~$ [00:00:23.884,033] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:23.884,063] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:23.885,375] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.885,406] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.885,437] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 80 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.885,498] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 40
+uart:~$ [00:00:23.885,528] <dbg> zmk: position_state_changed_listener: 40 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.885,589] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 40, binding name: layer_tap_fast
+uart:~$ [00:00:23.885,681] <dbg> zmk: mo_keymap_binding_released: position 40 layer 1
+uart:~$ [00:00:23.885,681] <dbg> zmk: set_layer_state: layer_changed: layer 1 state 0
+uart:~$ [00:00:23.885,742] <dbg> zmk: on_hold_tap_binding_released: 40 cleaning up hold-tap
+uart:~$ [00:00:23.892,883] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:23.892,883] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:23.892,913] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:23.893,005] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 39
+uart:~$ [00:00:23.893,035] <dbg> zmk: position_state_changed_listener: 39 bubble (no undecided hold_tap active)
+uart:~$ [00:00:23.893,096] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 1 position: 39, binding name: momentary_layer
+uart:~$ [00:00:23.893,127] <dbg> zmk: mo_keymap_binding_released: position 39 layer 3
+uart:~$ [00:00:23.893,157] <dbg> zmk: set_layer_state: layer_changed: layer 3 state 0
+uart:~$ [00:00:24.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 27 wpm_update_counter 4
+uart:~$ uart:~$ uart:~$ [00:00:25.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 21 wpm_update_counter 5
+uart:~$ uart:~$ [00:00:26.300,292] <dbg> zmk: wpm_work_handler: Raised WPM state changed 0 wpm_update_counter 1
+uart:~$ uart:~$ [00:00:30.311,187] <dbg> zmk: bvd_sample_fetch: ADC raw 1595 ~ 1401 mV => 4148 mV
+uart:~$ [00:00:30.311,218] <dbg> zmk: bvd_sample_fetch: Percent: 94
+uart:~$ uart:~$ [00:00:30.695,373] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:30.695,404] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:30.695,434] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 02 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:30.695,526] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:30.695,556] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:30.695,617] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:30.695,678] <dbg> zmk: on_hold_tap_binding_pressed: 41 new undecided hold_tap
+uart:~$ [00:00:30.777,893] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:30.777,893] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:30.777,923] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:30.778,015] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:30.778,045] <dbg> zmk: position_state_changed_listener: 41 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:30.778,106] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:30.778,259] <dbg> zmk: decide_hold_tap: 41 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:30.778,289] <dbg> zmk: on_keymap_binding_pressed: position 41 keycode 0x7002A
+uart:~$ [00:00:30.778,320] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:30.778,350] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:30.778,350] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:30.778,442] <dbg> zmk: on_keymap_binding_released: position 41 keycode 0x7002A
+uart:~$ [00:00:30.778,472] <dbg> zmk: wpm_event_listener: key_pressed_count 1 keycode 42
+uart:~$ [00:00:30.778,472] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:30.778,503] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:30.778,503] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:30.779,418] <dbg> zmk: on_hold_tap_binding_released: 41 cleaning up hold-tap
+uart:~$ [00:00:30.875,396] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:30.875,396] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:30.875,427] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 02 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:30.875,549] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:30.875,579] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:30.875,640] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:30.875,701] <dbg> zmk: on_hold_tap_binding_pressed: 41 new undecided hold_tap
+uart:~$ [00:00:30.875,762] <dbg> zmk: decide_hold_tap: 41 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:30.875,793] <dbg> zmk: on_keymap_binding_pressed: position 41 keycode 0x7002A
+uart:~$ [00:00:30.875,823] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:30.875,854] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:30.875,885] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:30.965,393] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:30.965,423] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:30.965,454] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:30.965,606] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:30.965,637] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:30.965,667] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:30.965,759] <dbg> zmk: on_keymap_binding_released: position 41 keycode 0x7002A
+uart:~$ [00:00:30.965,789] <dbg> zmk: wpm_event_listener: key_pressed_count 2 keycode 42
+uart:~$ [00:00:30.965,789] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:30.965,820] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:30.965,850] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:30.965,911] <dbg> zmk: on_hold_tap_binding_released: 41 cleaning up hold-tap
+uart:~$ [00:00:31.055,389] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:31.055,419] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:31.055,450] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 02 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:31.055,541] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:31.055,572] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:31.055,633] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:31.055,664] <dbg> zmk: on_hold_tap_binding_pressed: 41 new undecided hold_tap
+uart:~$ [00:00:31.055,755] <dbg> zmk: decide_hold_tap: 41 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:31.055,786] <dbg> zmk: on_keymap_binding_pressed: position 41 keycode 0x7002A
+uart:~$ [00:00:31.055,816] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:31.055,847] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:31.055,847] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:31.122,894] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:31.122,924] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:31.122,955] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:31.123,077] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:31.123,107] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:31.123,168] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:31.123,229] <dbg> zmk: on_keymap_binding_released: position 41 keycode 0x7002A
+uart:~$ [00:00:31.123,260] <dbg> zmk: wpm_event_listener: key_pressed_count 3 keycode 42
+uart:~$ [00:00:31.123,291] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:31.123,291] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:31.123,321] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:31.123,382] <dbg> zmk: on_hold_tap_binding_released: 41 cleaning up hold-tap
+uart:~$ [00:00:31.212,890] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:31.212,921] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:31.212,951] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 02 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:31.213,043] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:31.213,073] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:31.213,134] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:31.213,165] <dbg> zmk: on_hold_tap_binding_pressed: 41 new undecided hold_tap
+uart:~$ [00:00:31.213,256] <dbg> zmk: decide_hold_tap: 41 decided tap (tap-preferred decision moment quick-tap)
+uart:~$ [00:00:31.213,287] <dbg> zmk: on_keymap_binding_pressed: position 41 keycode 0x7002A
+uart:~$ [00:00:31.213,317] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:31.213,348] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:31.213,348] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:31.287,872] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:31.287,902] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:31.287,933] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:31.288,055] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 41
+uart:~$ [00:00:31.288,055] <dbg> zmk: position_state_changed_listener: 41 bubble (no undecided hold_tap active)
+uart:~$ [00:00:31.288,116] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 41, binding name: mod_tap_hyper
+uart:~$ [00:00:31.288,208] <dbg> zmk: on_keymap_binding_released: position 41 keycode 0x7002A
+uart:~$ [00:00:31.288,208] <dbg> zmk: wpm_event_listener: key_pressed_count 4 keycode 42
+uart:~$ [00:00:31.288,238] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x2A implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:31.288,269] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:31.288,269] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:31.288,330] <dbg> zmk: on_hold_tap_binding_released: 41 cleaning up hold-tap
+uart:~$ [00:00:31.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 48 wpm_update_counter 1
+uart:~$ uart:~$ uart:~$ [00:00:31.977,874] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:31.977,905] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:31.977,935] <dbg> zmk: split_central_notify_func: data
+                              40 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |@....... ........
+uart:~$ [00:00:31.978,027] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:31.978,057] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:31.978,118] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:31.978,149] <dbg> zmk: on_keymap_binding_pressed: position 6 keycode 0x7001C
+uart:~$ [00:00:31.978,179] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:31.978,179] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:31.978,210] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:32.052,886] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:32.052,917] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:32.052,947] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:32.053,039] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:32.053,070] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:32.053,100] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:32.053,161] <dbg> zmk: on_keymap_binding_released: position 6 keycode 0x7001C
+uart:~$ [00:00:32.053,161] <dbg> zmk: wpm_event_listener: key_pressed_count 5 keycode 28
+uart:~$ [00:00:32.053,192] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:32.053,192] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:32.053,222] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:32.300,292] <dbg> zmk: wpm_work_handler: Raised WPM state changed 30 wpm_update_counter 2
+uart:~$ [00:00:32.307,861] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:32.307,891] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:32.307,922] <dbg> zmk: split_central_notify_func: data
+                              80 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:32.308,013] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 7
+uart:~$ [00:00:32.308,044] <dbg> zmk: position_state_changed_listener: 7 bubble (no undecided hold_tap active)
+uart:~$ [00:00:32.308,105] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 7, binding name: key_press
+uart:~$ [00:00:32.308,135] <dbg> zmk: on_keymap_binding_pressed: position 7 keycode 0x70018
+uart:~$ [00:00:32.308,166] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x18 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:32.308,166] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:32.308,197] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:32.397,918] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:32.397,949] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:32.397,979] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:32.398,071] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 7
+uart:~$ [00:00:32.398,101] <dbg> zmk: position_state_changed_listener: 7 bubble (no undecided hold_tap active)
+uart:~$ [00:00:32.398,162] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 7, binding name: key_press
+uart:~$ [00:00:32.398,193] <dbg> zmk: on_keymap_binding_released: position 7 keycode 0x70018
+uart:~$ [00:00:32.398,223] <dbg> zmk: wpm_event_listener: key_pressed_count 6 keycode 24
+uart:~$ [00:00:32.398,223] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x18 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:32.398,254] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:32.398,284] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ uart:~$ [00:00:32.667,877] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:32.667,907] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:32.667,938] <dbg> zmk: split_central_notify_func: data
+                              00 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:32.668,029] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 8
+uart:~$ [00:00:32.668,060] <dbg> zmk: position_state_changed_listener: 8 bubble (no undecided hold_tap active)
+uart:~$ [00:00:32.668,121] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 8, binding name: key_press
+uart:~$ [00:00:32.668,151] <dbg> zmk: on_keymap_binding_pressed: position 8 keycode 0x7000C
+uart:~$ [00:00:32.668,182] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:32.668,182] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:32.668,212] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:32.765,380] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:32.765,411] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:32.765,441] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:32.765,533] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 8
+uart:~$ [00:00:32.765,563] <dbg> zmk: position_state_changed_listener: 8 bubble (no undecided hold_tap active)
+uart:~$ [00:00:32.765,625] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 8, binding name: key_press
+uart:~$ [00:00:32.765,655] <dbg> zmk: on_keymap_binding_released: position 8 keycode 0x7000C
+uart:~$ [00:00:32.765,655] <dbg> zmk: wpm_event_listener: key_pressed_count 7 keycode 12
+uart:~$ [00:00:32.765,686] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:32.765,716] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:32.765,716] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:32.885,375] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:32.885,406] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:32.885,437] <dbg> zmk: split_central_notify_func: data
+                              00 02 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:32.885,528] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 9
+uart:~$ [00:00:32.885,559] <dbg> zmk: position_state_changed_listener: 9 bubble (no undecided hold_tap active)
+uart:~$ [00:00:32.885,620] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 9, binding name: key_press
+uart:~$ [00:00:32.885,650] <dbg> zmk: on_keymap_binding_pressed: position 9 keycode 0x70012
+uart:~$ [00:00:32.885,681] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x12 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:32.885,681] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:32.885,711] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:32.975,372] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:32.975,402] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:32.975,433] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:32.975,524] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 9
+uart:~$ [00:00:32.975,555] <dbg> zmk: position_state_changed_listener: 9 bubble (no undecided hold_tap active)
+uart:~$ [00:00:32.975,616] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 9, binding name: key_press
+uart:~$ [00:00:32.975,646] <dbg> zmk: on_keymap_binding_released: position 9 keycode 0x70012
+uart:~$ [00:00:32.975,677] <dbg> zmk: wpm_event_listener: key_pressed_count 8 keycode 18
+uart:~$ [00:00:32.975,677] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x12 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:32.975,708] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:32.975,738] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:33.087,890] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:33.087,921] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:33.087,951] <dbg> zmk: split_central_notify_func: data
+                              00 08 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:33.088,012] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:33.088,043] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:33.088,104] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ uart:~$ [00:00:33.192,932] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:33.192,962] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:33.192,993] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:33.193,115] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:33.193,145] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:33.193,206] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ uart:~$ [00:00:33.297,912] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:33.297,943] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:33.297,973] <dbg> zmk: split_central_notify_func: data
+                              00 08 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:33.298,095] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:33.298,126] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:33.298,187] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ [00:00:33.300,292] <dbg> zmk: wpm_work_handler: Raised WPM state changed 32 wpm_update_counter 3
+uart:~$ [00:00:33.387,878] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:33.387,908] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:33.387,908] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:33.388,031] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 11
+uart:~$ [00:00:33.388,061] <dbg> zmk: position_state_changed_listener: 11 bubble (no undecided hold_tap active)
+uart:~$ [00:00:33.388,092] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 11, binding name: none
+uart:~$ uart:~$ [00:00:33.597,869] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:33.597,900] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:33.597,930] <dbg> zmk: split_central_notify_func: data
+                              00 00 80 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:33.598,022] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 23
+uart:~$ [00:00:33.598,052] <dbg> zmk: position_state_changed_listener: 23 bubble (no undecided hold_tap active)
+uart:~$ [00:00:33.598,114] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 23, binding name: key_press
+uart:~$ [00:00:33.598,144] <dbg> zmk: on_keymap_binding_pressed: position 23 keycode 0x70034
+uart:~$ [00:00:33.598,175] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x34 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:33.598,175] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:33.598,205] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:33.680,389] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:33.680,419] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:33.680,450] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:33.680,511] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 23
+uart:~$ [00:00:33.680,541] <dbg> zmk: position_state_changed_listener: 23 bubble (no undecided hold_tap active)
+uart:~$ [00:00:33.680,603] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 23, binding name: key_press
+uart:~$ [00:00:33.680,633] <dbg> zmk: on_keymap_binding_released: position 23 keycode 0x70034
+uart:~$ [00:00:33.680,664] <dbg> zmk: wpm_event_listener: key_pressed_count 9 keycode 52
+uart:~$ [00:00:33.680,694] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x34 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:33.680,694] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:33.680,725] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:34.047,882] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:34.047,912] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:34.047,943] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 08 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:34.048,034] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 35
+uart:~$ [00:00:34.048,065] <dbg> zmk: position_state_changed_listener: 35 bubble (no undecided hold_tap active)
+uart:~$ [00:00:34.048,095] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 35, binding name: none
+uart:~$ [00:00:34.130,371] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:34.130,401] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:34.130,432] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:34.130,523] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 35
+uart:~$ [00:00:34.130,554] <dbg> zmk: position_state_changed_listener: 35 bubble (no undecided hold_tap active)
+uart:~$ [00:00:34.130,615] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 35, binding name: none
+uart:~$ uart:~$ [00:00:34.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 27 wpm_update_counter 4
+uart:~$ uart:~$ [00:00:34.580,383] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:34.580,413] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:34.580,444] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 02 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:34.580,535] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 33
+uart:~$ [00:00:34.580,566] <dbg> zmk: position_state_changed_listener: 33 bubble (no undecided hold_tap active)
+uart:~$ [00:00:34.580,596] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 33, binding name: key_press
+uart:~$ [00:00:34.580,657] <dbg> zmk: on_keymap_binding_pressed: position 33 keycode 0x70037
+uart:~$ [00:00:34.580,657] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x37 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:34.580,688] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:34.580,718] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:34.670,379] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:34.670,410] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:34.670,440] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:34.670,532] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 33
+uart:~$ [00:00:34.670,562] <dbg> zmk: position_state_changed_listener: 33 bubble (no undecided hold_tap active)
+uart:~$ [00:00:34.670,623] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 33, binding name: key_press
+uart:~$ [00:00:34.670,654] <dbg> zmk: on_keymap_binding_released: position 33 keycode 0x70037
+uart:~$ [00:00:34.670,654] <dbg> zmk: wpm_event_listener: key_pressed_count 10 keycode 55
+uart:~$ [00:00:34.670,684] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x37 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:34.670,715] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:34.670,715] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:34.827,880] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:34.827,911] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:34.827,941] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 01 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:34.828,033] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 32
+uart:~$ [00:00:34.828,063] <dbg> zmk: position_state_changed_listener: 32 bubble (no undecided hold_tap active)
+uart:~$ [00:00:34.828,125] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 32, binding name: key_press
+uart:~$ [00:00:34.828,155] <dbg> zmk: on_keymap_binding_pressed: position 32 keycode 0x70036
+uart:~$ [00:00:34.828,186] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x36 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:34.828,186] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:34.828,216] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:34.925,384] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:34.925,415] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:34.925,445] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:34.925,537] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 32
+uart:~$ [00:00:34.925,567] <dbg> zmk: position_state_changed_listener: 32 bubble (no undecided hold_tap active)
+uart:~$ [00:00:34.925,598] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 32, binding name: key_press
+uart:~$ [00:00:34.925,659] <dbg> zmk: on_keymap_binding_released: position 32 keycode 0x70036
+uart:~$ [00:00:34.925,659] <dbg> zmk: wpm_event_listener: key_pressed_count 11 keycode 54
+uart:~$ [00:00:34.925,689] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x36 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:34.925,689] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:34.925,720] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:35.075,378] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:35.075,408] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:35.075,439] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 80 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:35.075,531] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 31
+uart:~$ [00:00:35.075,561] <dbg> zmk: position_state_changed_listener: 31 bubble (no undecided hold_tap active)
+uart:~$ [00:00:35.075,622] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 31, binding name: key_press
+uart:~$ [00:00:35.075,653] <dbg> zmk: on_keymap_binding_pressed: position 31 keycode 0x70010
+uart:~$ [00:00:35.075,683] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x10 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:35.075,683] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:35.075,714] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:35.172,882] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:35.172,912] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:35.172,943] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:35.173,034] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 31
+uart:~$ [00:00:35.173,065] <dbg> zmk: position_state_changed_listener: 31 bubble (no undecided hold_tap active)
+uart:~$ [00:00:35.173,095] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 31, binding name: key_press
+uart:~$ [00:00:35.173,156] <dbg> zmk: on_keymap_binding_released: position 31 keycode 0x70010
+uart:~$ [00:00:35.173,156] <dbg> zmk: wpm_event_listener: key_pressed_count 12 keycode 16
+uart:~$ [00:00:35.173,187] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x10 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:35.173,217] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:35.173,217] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ [00:00:35.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 28 wpm_update_counter 5
+uart:~$ [00:00:35.337,860] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:35.337,890] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:35.337,921] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 40 00 00 00 00  00 00 00 00 00 00 00 00 |...@.... ........
+uart:~$ [00:00:35.338,012] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 30
+uart:~$ [00:00:35.338,043] <dbg> zmk: position_state_changed_listener: 30 bubble (no undecided hold_tap active)
+uart:~$ [00:00:35.338,104] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 30, binding name: key_press
+uart:~$ [00:00:35.338,134] <dbg> zmk: on_keymap_binding_pressed: position 30 keycode 0x70011
+uart:~$ [00:00:35.338,165] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x11 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:35.338,165] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:35.338,195] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:35.405,395] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:35.405,426] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:35.405,487] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:35.405,578] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 30
+uart:~$ [00:00:35.405,578] <dbg> zmk: position_state_changed_listener: 30 bubble (no undecided hold_tap active)
+uart:~$ [00:00:35.405,639] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 30, binding name: key_press
+uart:~$ [00:00:35.405,670] <dbg> zmk: on_keymap_binding_released: position 30 keycode 0x70011
+uart:~$ [00:00:35.405,700] <dbg> zmk: wpm_event_listener: key_pressed_count 1 keycode 17
+uart:~$ [00:00:35.405,731] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x11 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:35.405,731] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:35.405,761] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ uart:~$ uart:~$ [00:00:36.035,369] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:36.035,400] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:36.035,430] <dbg> zmk: split_central_notify_func: data
+                              00 00 04 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:36.035,522] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 18
+uart:~$ [00:00:36.035,552] <dbg> zmk: position_state_changed_listener: 18 bubble (no undecided hold_tap active)
+uart:~$ [00:00:36.035,614] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 18, binding name: mouse_key_tap
+uart:~$ [00:00:36.035,675] <dbg> zmk: on_hold_tap_binding_pressed: 18 new undecided hold_tap
+uart:~$ [00:00:36.057,891] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:36.057,891] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:36.057,922] <dbg> zmk: split_central_notify_func: data
+                              40 00 04 00 00 00 00 00  00 00 00 00 00 00 00 00 |@....... ........
+uart:~$ [00:00:36.058,013] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:36.058,074] <dbg> zmk: position_state_changed_listener: 18 capturing 6 down event
+uart:~$ [00:00:36.058,105] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ uart:~$ [00:00:36.102,874] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:36.102,905] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:36.102,935] <dbg> zmk: split_central_notify_func: data
+                              00 00 04 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:36.103,027] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 6
+uart:~$ [00:00:36.103,057] <dbg> zmk: position_state_changed_listener: 18 capturing 6 up event
+uart:~$ [00:00:36.103,088] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:36.125,396] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:36.125,427] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:36.125,457] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:36.125,579] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 18
+uart:~$ [00:00:36.125,610] <dbg> zmk: position_state_changed_listener: 18 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:36.125,671] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 18, binding name: mouse_key_tap
+uart:~$ [00:00:36.125,762] <dbg> zmk: decide_hold_tap: 18 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:36.125,823] <dbg> zmk: on_keymap_binding_pressed: position 18 keycode 0x7000B
+uart:~$ [00:00:36.125,854] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0B implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:36.125,854] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:36.125,885] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:36.125,976] <dbg> zmk: release_captured_events: Releasing key position event for position 6 pressed
+uart:~$ [00:00:36.125,976] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:36.126,037] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:36.126,068] <dbg> zmk: on_keymap_binding_pressed: position 6 keycode 0x7001C
+uart:~$ [00:00:36.126,098] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:36.126,129] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:36.126,129] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:36.126,556] <dbg> zmk: release_captured_events: Releasing key position event for position 6 released
+uart:~$ [00:00:36.126,556] <dbg> zmk: position_state_changed_listener: 6 bubble (no undecided hold_tap active)
+uart:~$ [00:00:36.126,617] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 6, binding name: key_press
+uart:~$ [00:00:36.126,647] <dbg> zmk: on_keymap_binding_released: position 6 keycode 0x7001C
+uart:~$ [00:00:36.126,678] <dbg> zmk: wpm_event_listener: key_pressed_count 2 keycode 28
+uart:~$ [00:00:36.126,678] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x1C implicit_mods 0x00 explicit_mods 0x00
+uart:~$ uart:~$ uart:~$ [00:00:36.126,708] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:36.126,739] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:36.127,593] <dbg> zmk: on_keymap_binding_released: position 18 keycode 0x7000B
+uart:~$ [00:00:36.127,593] <dbg> zmk: wpm_event_listener: key_pressed_count 3 keycode 11
+uart:~$ [00:00:36.127,624] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0B implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:36.127,655] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:36.127,655] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:36.128,570] <dbg> zmk: on_hold_tap_binding_released: 18 cleaning up hold-tap
+uart:~$ [00:00:36.300,323] <dbg> zmk: wpm_work_handler: Raised WPM state changed 36 wpm_update_counter 1
+uart:~$ uart:~$ [00:00:36.672,882] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:36.672,912] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:36.672,943] <dbg> zmk: split_central_notify_func: data
+                              00 00 10 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:36.673,034] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 20
+uart:~$ [00:00:36.673,065] <dbg> zmk: position_state_changed_listener: 20 bubble (no undecided hold_tap active)
+uart:~$ [00:00:36.673,095] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 20, binding name: homerow_mods_right
+uart:~$ [00:00:36.673,156] <dbg> zmk: on_hold_tap_binding_pressed: 20 new undecided hold_tap
+uart:~$ [00:00:36.755,371] <dbg> bt_gatt: bt_gatt_notification: handle 0x001e length 16
+uart:~$ [00:00:36.755,401] <dbg> zmk: split_central_notify_func: [NOTIFICATION] data 0x20029f57 length 16
+uart:~$ [00:00:36.755,432] <dbg> zmk: split_central_notify_func: data
+                              00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 |........ ........
+uart:~$ [00:00:36.755,523] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 20
+uart:~$ [00:00:36.755,554] <dbg> zmk: position_state_changed_listener: 20 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:36.755,615] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 20, binding name: homerow_mods_right
+uart:~$ [00:00:36.755,706] <dbg> zmk: decide_hold_tap: 20 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:36.755,737] <dbg> zmk: on_keymap_binding_pressed: position 20 keycode 0x7000E
+uart:~$ [00:00:36.755,767] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x0E implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:36.755,798] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x00
+uart:~$ [00:00:36.755,798] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:36.755,889] <dbg> zmk: on_keymap_binding_released: position 20 keycode 0x7000E
+uart:~$ [00:00:36.755,920] <dbg> zmk: wpm_event_listener: key_pressed_count 4 keycode 14
+uart:~$ [00:00:36.755,920] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x0E implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:36.755,950] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:36.755,981] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:36.756,561] <dbg> zmk: on_hold_tap_binding_released: 20 cleaning up hold-tap
+uart:~$ uart:~$ uart:~$ 

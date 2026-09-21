@@ -1,0 +1,6 @@
+# Diagnostic: USB console + Zephyr shell (gpio / i2c / kernel commands) and
+# kscan matrix in polling mode (bypasses GPIOTE interrupts).
+name: toucan-diag-shell
+append:
+  EXTRA_CONF_FILE: toucan-diag-shell.conf
+  EXTRA_DTC_OVERLAY_FILE: toucan-diag-shell.overlay
