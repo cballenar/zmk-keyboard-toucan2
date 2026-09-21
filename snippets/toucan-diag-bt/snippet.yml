@@ -1,0 +1,3 @@
+name: toucan-diag-bt
+append:
+  EXTRA_CONF_FILE: toucan-diag-bt.conf

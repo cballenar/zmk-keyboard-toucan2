@@ -1,0 +1,12 @@
+/ {
+    chosen {
+        zephyr,console = &toucan_diag_uart;
+        zephyr,shell-uart = &toucan_diag_uart;
+    };
+};
+
+&zephyr_udc0 {
+    toucan_diag_uart: toucan_diag_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};

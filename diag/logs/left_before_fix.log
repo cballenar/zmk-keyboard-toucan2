@@ -1,0 +1,347 @@
+
+=== opened /dev/cu.usbmodem31201 at +0.0s ===
+[00:00:00.292,602] <err> qspi_nor: JEDEC id [85 60 15] expect [c8 40 15]
+uart:~$ [00:00:00.293,090] <dbg> zmk: bvd_init: AIN7 setup returned 0
+uart:~$ *** Booting Zephyr OS build dacab4875df7 ***
+uart:~$ [00:00:00.298,400] <inf> fs_nvs: 8 Sectors of 4096 bytes
+uart:~$ [00:00:00.298,400] <inf> fs_nvs: alloc wra: 0, ce8
+uart:~$ [00:00:00.298,431] <inf> fs_nvs: data wra: 0, 4a0
+uart:~$ [00:00:00.300,384] <inf> bt_hci_core: HW Platform: Nordic Semiconductor (0x0002)
+uart:~$ [00:00:00.300,415] <inf> bt_hci_core: HW Variant: nRF52x (0x0002)
+uart:~$ [00:00:00.300,445] <inf> bt_hci_core: Firmware: Standard Bluetooth controller (0x00) Version 3.5 Build 0
+uart:~$ [00:00:00.300,842] <inf> bt_hci_core: No ID address. App must call settings_load()
+uart:~$ [00:00:00.301,208] <dbg> zmk: kscan_matrix_init_input_inst: Configured pin 1 on gpio@50000300 for input
+uart:~$ [00:00:00.301,239] <dbg> zmk: kscan_matrix_init_input_inst: Configured pin 19 on gpio@50000000 for input
+uart:~$ [00:00:00.301,300] <dbg> zmk: kscan_matrix_init_input_inst: Configured pin 28 on gpio@50000000 for input
+uart:~$ [00:00:00.301,330] <dbg> zmk: kscan_matrix_init_input_inst: Configured pin 29 on gpio@50000000 for input
+uart:~$ [00:00:00.301,391] <dbg> zmk: kscan_matrix_init_output_inst: Configured pin 9 on gpio@50000000 for output
+uart:~$ [00:00:00.301,422] <dbg> zmk: kscan_matrix_init_output_inst: Configured pin 4 on gpio@50000000 for output
+uart:~$ [00:00:00.301,483] <dbg> zmk: kscan_matrix_init_output_inst: Configured pin 10 on gpio@50000000 for output
+uart:~$ [00:00:00.301,513] <dbg> zmk: kscan_matrix_init_output_inst: Configured pin 5 on gpio@50000000 for output
+uart:~$ [00:00:00.301,574] <dbg> zmk: kscan_matrix_init_output_inst: Configured pin 11 on gpio@50000300 for output
+uart:~$ [00:00:00.301,635] <dbg> zmk: kscan_matrix_init_output_inst: Configured pin 12 on gpio@50000300 for output
+uart:~$ [00:00:00.301,910] <dbg> zmk: zmk_usb_get_conn_state: state: 11
+uart:~$ [00:00:00.301,910] <dbg> zmk: get_selected_transport: No endpoint transports are ready.
+uart:~$ [00:00:00.302,978] <inf> zmk: Welcome to ZMK!
+
+uart:~$ [00:00:00.303,497] <inf> usb_hid: Device connected
+uart:~$ [00:00:00.303,527] <dbg> zmk: zmk_usb_get_conn_state: state: 2
+uart:~$ [00:00:00.303,558] <dbg> zmk: zmk_usb_get_conn_state: state: 2
+uart:~$ [00:00:00.303,588] <dbg> zmk: zmk_usb_get_conn_state: state: 2
+uart:~$ [00:00:00.303,588] <dbg> zmk: get_selected_transport: No endpoint transports are ready.
+uart:~$ [00:00:00.303,802] <dbg> zmk: ble_profiles_handle_set: Setting BLE value peripheral_addresses/0
+uart:~$ [00:00:00.304,016] <dbg> bt_gatt: db_hash_set: Stored Hash: 
+                                  ad 22 21 d8 0e 3a 6f aa  63 af a1 43 49 be 1e 5d |."!..:o. c..CI..]
+uart:~$ [00:00:00.306,610] <inf> usb_hid: Device suspended
+uart:~$ [00:00:00.306,640] <dbg> zmk: zmk_usb_get_conn_state: state: 5
+uart:~$ [00:00:00.306,671] <dbg> zmk: zmk_usb_get_conn_state: state: 5
+uart:~$ [00:00:00.306,701] <dbg> zmk: zmk_usb_get_conn_state: state: 5
+uart:~$ [00:00:00.306,701] <dbg> zmk: get_selected_transport: No endpoint transports are ready.
+uart:~$ [00:00:00.318,084] <inf> bt_hci_core: Identity: E0:F4:5F:43:30:7B (random)
+uart:~$ [00:00:00.318,115] <inf> bt_hci_core: HCI: version 5.4 (0x0d) revision 0x0000, manufacturer 0x05f1
+uart:~$ [00:00:00.318,145] <inf> bt_hci_core: LMP: version 5.4 (0x0d) subver 0xffff
+uart:~$ [00:00:00.318,389] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 2
+uart:~$ [00:00:00.318,420] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.318,634] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.318,878] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.318,908] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 2
+uart:~$ [00:00:00.318,908] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.319,152] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.319,366] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.319,396] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 2
+uart:~$ [00:00:00.319,610] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.319,854] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 2
+uart:~$ [00:00:00.319,885] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,098] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 2
+uart:~$ [00:00:00.320,312] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,343] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,587] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,617] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 2
+uart:~$ [00:00:00.320,831] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.320,861] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.321,075] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.321,319] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.321,350] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.321,594] <dbg> bt_gatt: bt_gatt_attr_read: handle 0x0000 offset 0 length 5
+uart:~$ [00:00:00.322,021] <dbg> bt_gatt: db_hash_gen: Hash: 
+                                  f9 95 4d ec a1 c6 6c 16  4b 1d c2 0a ac d8 25 fc |..M...l. K.....%.
+uart:~$ [00:00:00.322,052] <dbg> bt_gatt: do_db_hash: New Hash: 
+                                  f9 95 4d ec a1 c6 6c 16  4b 1d c2 0a ac d8 25 fc |..M...l. K.....%.
+uart:~$ [00:00:00.322,052] <dbg> bt_gatt: sc_indicate: start 0x0001 end 0xffff
+uart:~$ [00:00:00.322,082] <dbg> bt_gatt: sc_indicate: indicate pending, waiting until complete...
+uart:~$ [00:00:00.326,232] <dbg> bt_gatt: db_hash_store: Database Hash stored
+uart:~$ [00:00:00.326,263] <dbg> zmk: zmk_ble_ready: ready? 0
+uart:~$ [00:00:00.326,263] <dbg> zmk: update_advertising: advertising from 0 to 2
+uart:~$ [00:00:00.327,392] <dbg> zmk: start_scanning: Scanning successfully started
+uart:~$ [00:00:00.327,636] <dbg> zmk: zmk_display_init: 
+uart:~$ [00:00:00.327,667] <dbg> zmk: initialize_display: 
+uart:~$ [00:00:00.328,399] <dbg> zmk: zmk_usb_get_conn_state: state: 5
+uart:~$ [00:00:00.336,303] <dbg> bt_gatt: sc_process: start 0x0001 end 0xffff
+uart:~$ [00:00:00.336,975] <dbg> zmk: zmk_usb_get_conn_state: state: 5
+uart:~$ [00:00:00.370,208] <wrn> ls0xx: Unsupported
+uart:~$ [00:00:00.402,404] <dbg> zmk: split_central_device_found: [DEVICE]: 71:14:B0:90:47:20 (random), AD evt type 0, AD data len 18, RSSI -44
+uart:~$ [00:00:00.402,404] <dbg> zmk: split_central_eir_parse: [AD]: 1 data_len 1
+uart:~$ [00:00:00.402,435] <dbg> zmk: split_central_eir_parse: [AD]: 10 data_len 1
+uart:~$ [00:00:00.402,435] <dbg> zmk: split_central_eir_parse: [AD]: 255 data_len 10
+uart:~$ [00:00:00.434,570] <inf> usb_hid: Device resumed
+uart:~$ [00:00:00.434,600] <inf> usb_hid: from suspend
+uart:~$ [00:00:00.434,600] <dbg> zmk: zmk_usb_get_conn_state: state: 6
+uart:~$ [00:00:00.434,661] <inf> usb_hid: Device reset detected
+uart:~$ [00:00:00.434,692] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.434,722] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.434,722] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.434,753] <dbg> zmk: get_selected_transport: No endpoint transports are ready.
+uart:~$ [00:00:00.434,783] <dbg> zmk: zmk_usb_get_conn_state: state: 1
+uart:~$ [00:00:00.455,718] <dbg> zmk: split_central_device_found: [DEVICE]: 51:2D:FF:40:AE:88 (random), AD evt type 3, AD data len 27, RSSI -45
+uart:~$ [00:00:00.489,654] <inf> usb_hid: Device configured
+uart:~$ [00:00:00.489,685] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.489,746] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.489,776] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.489,807] <dbg> zmk: get_selected_transport: Only USB is ready.
+uart:~$ [00:00:00.489,807] <dbg> zmk: zmk_hid_mouse_clear: Mouse report cleared
+uart:~$ [00:00:00.489,837] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:00.489,868] <dbg> zmk: zmk_endpoints_send_report: usage page 0x0C
+uart:~$ [00:00:00.489,898] <inf> zmk: Endpoint changed: USB
+uart:~$ [00:00:00.489,990] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.490,203] <wrn> zmk: Not sending, no active address for current profile
+uart:~$ [00:00:00.490,234] <wrn> zmk: Not sending, no active address for current profile
+uart:~$ [00:00:00.597,595] <dbg> zmk: split_central_device_found: [DEVICE]: 54:B8:29:4A:5E:2C (random), AD evt type 0, AD data len 18, RSSI -53
+uart:~$ [00:00:00.597,625] <dbg> zmk: split_central_eir_parse: [AD]: 1 data_len 1
+uart:~$ [00:00:00.597,656] <dbg> zmk: split_central_eir_parse: [AD]: 10 data_len 1
+uart:~$ [00:00:00.597,656] <dbg> zmk: split_central_eir_parse: [AD]: 255 data_len 10
+uart:~$ [00:00:00.756,591] <dbg> zmk: split_central_device_found: [DEVICE]: FB:A4:69:44:43:9A (random), AD evt type 3, AD data len 8, RSSI -60
+uart:~$ [00:00:00.764,495] <dbg> zmk: split_central_device_found: [DEVICE]: 6E:BF:02:E5:1B:21 (random), AD evt type 0, AD data len 18, RSSI -75
+uart:~$ [00:00:00.764,526] <dbg> zmk: split_central_eir_parse: [AD]: 1 data_len 1
+uart:~$ [00:00:00.764,526] <dbg> zmk: split_central_eir_parse: [AD]: 255 data_len 10
+uart:~$ [00:00:00.764,556] <dbg> zmk: split_central_eir_parse: [AD]: 10 data_len 1
+uart:~$ [00:00:00.822,509] <dbg> zmk: split_central_device_found: [DEVICE]: 4B:EF:36:F3:A6:2A (random), AD evt type 0, AD data len 18, RSSI -63
+uart:~$ [00:00:00.822,540] <dbg> zmk: split_central_eir_parse: [AD]: 1 data_len 1
+uart:~$ [00:00:00.822,540] <dbg> zmk: split_central_eir_parse: [AD]: 10 data_len 1
+uart:~$ [00:00:00.822,570] <dbg> zmk: split_central_eir_parse: [AD]: 255 data_len 10
+uart:~$ [00:00:00.830,017] <dbg> zmk: bvd_sample_fetch: ADC raw 1595 ~ 1401 mV => 4148 mV
+uart:~$ [00:00:00.830,017] <dbg> zmk: bvd_sample_fetch: Percent: 94
+uart:~$ [00:00:00.830,047] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:00.887,268] <dbg> zmk: split_central_device_found: [DEVICE]: FF:C2:D1:52:E8:50 (random), AD evt type 0, AD data len 25, RSSI -53
+uart:~$ [00:00:00.887,268] <dbg> zmk: split_central_eir_parse: [AD]: 1 data_len 1
+uart:~$ [00:00:00.887,298] <dbg> zmk: split_central_eir_parse: [AD]: 2 data_len 2
+uart:~$ [00:00:00.887,329] <dbg> zmk: split_central_eir_parse: [AD]: 7 data_len 16
+uart:~$ [00:00:00.887,329] <dbg> zmk: split_central_eir_found: Found the split service
+uart:~$ [00:00:00.887,359] <dbg> zmk: zmk_ble_put_peripheral_addr: Found existing peripheral address in slot 0
+uart:~$ [00:00:00.887,359] <dbg> zmk: stop_scanning: Stopping peripheral scanning
+uart:~$ [00:00:00.887,603] <dbg> zmk: split_central_eir_found: Initiating new connection
+uart:~$ [00:00:00.910,339] <dbg> zmk: zmk_battery_update: Setting BAS GATT battery level to 94.
+uart:~$ [00:00:00.910,491] <inf> zmk: Indicating initial battery status
+uart:~$ [00:00:00.910,614] <inf> zmk: Battery level 94, blinking green
+uart:~$ [00:00:00.910,644] <dbg> zmk: led_process_thread: Got a blink item from msgq, color 2, duration 2000
+uart:~$ [00:00:00.992,675] <dbg> bt_gatt: bt_gatt_connected: conn 0x20007528
+uart:~$ [00:00:01.007,049] <dbg> zmk: connected: Connected thread: 0x200082b0
+uart:~$ [00:00:01.007,049] <dbg> zmk: connected: SKIPPING FOR ROLE 0
+uart:~$ [00:00:01.007,141] <dbg> zmk: split_central_connected: Connected: FF:C2:D1:52:E8:50 (random)
+uart:~$ [00:00:01.007,171] <dbg> zmk: split_central_process_connection: Current security for connection: 1
+uart:~$ uart:~$ uart:~$ [00:00:01.007,293] <dbg> bt_gatt: gatt_find_type_encode: uuid 00000000-0096-7107-c967-c5cfb1c2482a start_handle 0x0001 end_handle 0xffff
+uart:~$ [00:00:01.007,324] <dbg> zmk: split_central_process_connection: New connection params: Interval: 6, Latency: 30, PHY: 1
+uart:~$ [00:00:01.007,324] <dbg> zmk: start_scanning: All devices are connected, scanning is unnecessary
+uart:~$ [00:00:01.007,965] <dbg> zmk: transport_status_changed_cb: Central at 0x91d7c changed status: enabled 1, available 1, connections 2
+uart:~$ [00:00:01.248,992] <dbg> bt_gatt: gatt_find_type_rsp: err 0x00
+uart:~$ [00:00:01.248,992] <dbg> bt_gatt: gatt_find_type_rsp: start_handle 0x001c end_handle 0x0028
+uart:~$ [00:00:01.249,023] <dbg> zmk: split_central_service_discovery_func: [ATTRIBUTE] handle 28
+uart:~$ [00:00:01.249,023] <dbg> zmk: split_central_service_discovery_func: Found split service
+uart:~$ [00:00:01.249,053] <dbg> bt_gatt: gatt_read_type: start_handle 0x0001 end_handle 0xffff
+uart:~$ [00:00:01.264,038] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.264,099] <dbg> bt_gatt: parse_characteristic: handle 0x0002 uuid 2a05 properties 0x20
+uart:~$ [00:00:01.264,099] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 2
+uart:~$ [00:00:01.264,190] <dbg> bt_gatt: parse_characteristic: handle 0x0005 uuid 2b29 properties 0x0a
+uart:~$ [00:00:01.264,190] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 5
+uart:~$ [00:00:01.264,221] <dbg> bt_gatt: gatt_read_type: start_handle 0x0006 end_handle 0xffff
+uart:~$ [00:00:01.279,022] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.279,083] <dbg> bt_gatt: parse_characteristic: handle 0x0007 uuid 2b2a properties 0x02
+uart:~$ uart:~$ uart:~$ [00:00:01.279,113] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 7
+uart:~$ [00:00:01.279,174] <dbg> bt_gatt: parse_characteristic: handle 0x000a uuid 2a00 properties 0x0a
+uart:~$ [00:00:01.279,205] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 10
+uart:~$ [00:00:01.279,235] <dbg> bt_gatt: gatt_read_type: start_handle 0x000b end_handle 0xffff
+uart:~$ [00:00:01.301,544] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.301,605] <dbg> bt_gatt: parse_characteristic: handle 0x000c uuid 2a01 properties 0x02
+uart:~$ [00:00:01.301,605] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 12
+uart:~$ [00:00:01.301,696] <dbg> bt_gatt: parse_characteristic: handle 0x000e uuid 2a04 properties 0x02
+uart:~$ [00:00:01.301,696] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 14
+uart:~$ [00:00:01.301,727] <dbg> bt_gatt: gatt_read_type: start_handle 0x000f end_handle 0xffff
+uart:~$ [00:00:01.316,528] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.316,589] <dbg> bt_gatt: parse_characteristic: handle 0x0011 uuid 2a19 properties 0x12
+uart:~$ [00:00:01.316,619] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 17
+uart:~$ [00:00:01.316,650] <dbg> zmk: split_central_chrc_discovery_func: Found battery level characteristics
+uart:~$ [00:00:01.316,680] <dbg> bt_gatt: gatt_find_info: start_handle 0x0012 end_handle 0xffff
+uart:~$ [00:00:01.316,741] <dbg> zmk: split_central_subscribe: [SUBSCRIBED]
+uart:~$ [00:00:01.316,772] <dbg> bt_gatt: bt_gatt_read: handle 0x0012
+uart:~$ [00:00:01.316,833] <dbg> bt_gatt: parse_characteristic: handle 0x0016 uuid 2a24 properties 0x02
+uart:~$ [00:00:01.316,864] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 22
+uart:~$ [00:00:01.316,894] <dbg> bt_gatt: gatt_read_type: start_handle 0x0017 end_handle 0xffff
+uart:~$ [00:00:01.331,604] <dbg> bt_gatt: gatt_find_info_rsp: err 0x00
+uart:~$ [00:00:01.331,665] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x0012 uuid 2a19
+uart:~$ [00:00:01.331,726] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x0013 uuid 2902
+uart:~$ [00:00:01.331,726] <dbg> bt_gatt: gatt_write_ccc: handle 0x0013 value 0x0001
+uart:~$ [00:00:01.353,942] <dbg> bt_gatt: gatt_read_rsp: err 0x00
+uart:~$ [00:00:01.353,942] <dbg> zmk: split_central_battery_level_read_func: [BATTERY LEVEL READ] data 0x20029f55 length 1
+uart:~$ [00:00:01.353,973] <dbg> zmk: split_central_battery_level_read_func: Battery level: 42
+uart:~$ [00:00:01.354,003] <dbg> zmk: split_central_battery_level_read_func: [READ COMPLETED]
+uart:~$ [00:00:01.354,095] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 42
+uart:~$ [00:00:01.354,125] <dbg> zmk: peripheral_batt_lvl_listener: Peripheral battery level event: 42
+uart:~$ [00:00:01.354,156] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ [00:00:01.369,049] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.369,110] <dbg> bt_gatt: parse_characteristic: handle 0x0018 uuid 2a29 properties 0x02
+uart:~$ [00:00:01.369,110] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 24
+uart:~$ [00:00:01.369,201] <dbg> bt_gatt: parse_characteristic: handle 0x001a uuid 2a50 properties 0x02
+uart:~$ [00:00:01.369,201] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 26
+uart:~$ [00:00:01.369,232] <dbg> bt_gatt: gatt_read_type: start_handle 0x001b end_handle 0xffff
+uart:~$ [00:00:01.383,911] <dbg> bt_gatt: gatt_write_ccc_rsp: err 0x00
+uart:~$ [00:00:01.406,585] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.406,677] <dbg> bt_gatt: parse_characteristic: handle 0x001d uuid 00000001-0096-7107-c967-c5cfb1c2482a properties 0x12
+uart:~$ [00:00:01.406,707] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 29
+uart:~$ [00:00:01.406,738] <dbg> zmk: split_central_chrc_discovery_func: Found position state characteristic
+uart:~$ [00:00:01.406,738] <dbg> bt_gatt: gatt_find_info: start_handle 0x001e end_handle 0xffff
+uart:~$ [00:00:01.406,799] <dbg> zmk: split_central_subscribe: [SUBSCRIBED]
+uart:~$ [00:00:01.406,829] <dbg> bt_gatt: gatt_read_type: start_handle 0x001e end_handle 0xffff
+uart:~$ [00:00:01.421,569] <dbg> bt_gatt: gatt_find_info_rsp: err 0x00
+uart:~$ [00:00:01.421,691] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x001e uuid 00000001-0096-7107-c967-c5cfb1c2482a
+uart:~$ [00:00:01.421,691] <dbg> bt_gatt: gatt_find_info: start_handle 0x001f end_handle 0xffff
+uart:~$ [00:00:01.436,614] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.436,706] <dbg> bt_gatt: parse_characteristic: handle 0x0020 uuid 00000002-0096-7107-c967-c5cfb1c2482a properties 0x04
+uart:~$ [00:00:01.436,737] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 32
+uart:~$ [00:00:01.436,737] <dbg> zmk: split_central_chrc_discovery_func: Found run behavior handle
+uart:~$ [00:00:01.436,767] <dbg> bt_gatt: gatt_read_type: start_handle 0x0021 end_handle 0xffff
+uart:~$ [00:00:01.451,507] <dbg> bt_gatt: gatt_find_info_rsp: err 0x00
+uart:~$ [00:00:01.451,568] <dbg> bt_gatt: gatt_find_info_rsp: handle 0x001f uuid 2902
+uart:~$ [00:00:01.451,599] <dbg> bt_gatt: gatt_write_ccc: handle 0x001f value 0x0001
+uart:~$ [00:00:01.466,644] <dbg> bt_gatt: gatt_read_type_rsp: err 0x00
+uart:~$ [00:00:01.466,735] <dbg> bt_gatt: parse_characteristic: handle 0x0023 uuid 00000006-0096-7107-c967-c5cfb1c2482a properties 0x10
+uart:~$ [00:00:01.466,766] <dbg> zmk: split_central_chrc_discovery_func: [ATTRIBUTE] handle 35
+uart:~$ [00:00:01.466,796] <dbg> zmk: split_central_chrc_discovery_func: Found an input characteristic
+uart:~$ [00:00:01.466,796] <dbg> zmk: split_central_chrc_discovery_func: Reserved a slot for the input subscription
+uart:~$ [00:00:01.466,827] <dbg> bt_gatt: gatt_read_type: start_handle 0x0024 end_handle 0xffff
+uart:~$ [00:00:01.991,821] <dbg> bt_gatt: gatt_write_ccc_rsp: err 0x05
+uart:~$ [00:00:01.991,851] <dbg> zmk: split_central_notify_func: [UNSUBSCRIBED]
+uart:~$ [00:00:01.991,943] <err> zmk: Security failed: FF:C2:D1:52:E8:50 (random) level 1 err 2
+uart:~$ [00:00:02.029,266] <dbg> bt_gatt: gatt_read_type_rsp: err 0x05
+uart:~$ [00:00:02.029,296] <dbg> zmk: split_central_chrc_discovery_func: Discover complete
+uart:~$ [00:00:02.029,388] <err> zmk: Security failed: FF:C2:D1:52:E8:50 (random) level 1 err 2
+uart:~$ [00:00:03.415,863] <inf> zmk: Indicating initial connectivity status
+uart:~$ [00:00:03.415,893] <inf> zmk: Finished initializing LED widget
+uart:~$ [00:00:03.432,006] <inf> zmk: Profile 0 open, blinking yellow
+uart:~$ [00:00:03.442,077] <dbg> zmk: led_process_thread: Got a blink item from msgq, color 3, duration 1000
+uart:~$ uart:~$ uart:~$ [00:00:19.105,133] <dbg> zmk: kscan_matrix_read: Sending event at 1,1 state on
+uart:~$ [00:00:19.105,255] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 1, position: 13, pressed: true
+uart:~$ [00:00:19.105,285] <dbg> zmk: position_state_changed_listener: 13 bubble (no undecided hold_tap active)
+uart:~$ [00:00:19.105,346] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 13, binding name: homerow_mods_left
+uart:~$ [00:00:19.105,377] <dbg> zmk: on_hold_tap_binding_pressed: 13 new undecided hold_tap
+uart:~$ [00:00:19.186,126] <dbg> zmk: kscan_matrix_read: Sending event at 1,2 state on
+uart:~$ [00:00:19.186,248] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 2, position: 14, pressed: true
+uart:~$ [00:00:19.186,279] <dbg> zmk: position_state_changed_listener: 13 capturing 14 down event
+uart:~$ [00:00:19.186,309] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ uart:~$ [00:00:19.245,544] <dbg> zmk: decide_hold_tap: 13 decided hold-timer (tap-preferred decision moment timer)
+uart:~$ [00:00:19.245,574] <dbg> zmk: on_keymap_binding_pressed: position 13 keycode 0x700E0
+uart:~$ [00:00:19.245,605] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0xE0 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.245,635] <dbg> zmk: zmk_hid_register_mod: Modifier 0 count 1
+uart:~$ [00:00:19.245,635] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x01
+uart:~$ [00:00:19.245,666] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x01
+uart:~$ [00:00:19.245,666] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.245,758] <dbg> zmk: release_captured_events: Releasing key position event for position 14 pressed
+uart:~$ [00:00:19.245,788] <dbg> zmk: position_state_changed_listener: 14 bubble (no undecided hold_tap active)
+uart:~$ [00:00:19.245,849] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 14, binding name: homerow_mods_left
+uart:~$ [00:00:19.245,910] <dbg> zmk: on_hold_tap_binding_pressed: 14 new undecided hold_tap
+uart:~$ [00:00:19.315,185] <dbg> zmk: kscan_matrix_read: Sending event at 1,1 state off
+uart:~$ [00:00:19.315,338] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 1, position: 13, pressed: false
+uart:~$ [00:00:19.315,399] <dbg> zmk: position_state_changed_listener: 14 bubbling 13 up event
+uart:~$ [00:00:19.315,460] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 13, binding name: homerow_mods_left
+uart:~$ [00:00:19.315,521] <dbg> zmk: on_keymap_binding_released: position 13 keycode 0x700E0
+uart:~$ [00:00:19.315,521] <dbg> zmk: wpm_event_listener: key_pressed_count 1 keycode 224
+uart:~$ [00:00:19.315,582] <dbg> zmk: keycode_state_changed_listener: 14 capturing 0xE0 up event
+uart:~$ [00:00:19.315,582] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:19.315,612] <dbg> zmk: on_hold_tap_binding_released: 13 cleaning up hold-tap
+uart:~$ [00:00:19.327,087] <dbg> zmk: decide_hold_tap: 14 decided hold-timer (tap-preferred decision moment timer)
+uart:~$ [00:00:19.327,178] <dbg> zmk: on_keymap_binding_pressed: position 14 keycode 0x700E2
+uart:~$ [00:00:19.327,178] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0xE2 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.327,209] <dbg> zmk: zmk_hid_register_mod: Modifier 2 count 1
+uart:~$ [00:00:19.327,209] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x05
+uart:~$ [00:00:19.327,239] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x05
+uart:~$ [00:00:19.327,239] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.327,331] <dbg> zmk: release_captured_events: Releasing mods changed event 0xE0 released
+uart:~$ [00:00:19.327,362] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0xE0 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.327,392] <dbg> zmk: zmk_hid_unregister_mod: Modifier 0 count: 0
+uart:~$ [00:00:19.327,392] <dbg> zmk: zmk_hid_unregister_mod: Modifier 0 released
+uart:~$ [00:00:19.327,423] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x04
+uart:~$ [00:00:19.327,423] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x04
+uart:~$ [00:00:19.327,453] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.334,136] <dbg> zmk: kscan_matrix_read: Sending event at 1,3 state on
+uart:~$ [00:00:19.334,228] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 3, position: 15, pressed: true
+uart:~$ [00:00:19.334,259] <dbg> zmk: position_state_changed_listener: 15 bubble (no undecided hold_tap active)
+uart:~$ [00:00:19.334,320] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 15, binding name: homerow_mods_left
+uart:~$ [00:00:19.334,350] <dbg> zmk: on_hold_tap_binding_pressed: 15 new undecided hold_tap
+uart:~$ [00:00:19.413,177] <dbg> zmk: kscan_matrix_read: Sending event at 1,2 state off
+uart:~$ [00:00:19.413,299] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 2, position: 14, pressed: false
+uart:~$ [00:00:19.413,360] <dbg> zmk: position_state_changed_listener: 15 bubbling 14 up event
+uart:~$ [00:00:19.413,391] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 14, binding name: homerow_mods_left
+uart:~$ [00:00:19.413,482] <dbg> zmk: on_keymap_binding_released: position 14 keycode 0x700E2
+uart:~$ [00:00:19.413,513] <dbg> zmk: wpm_event_listener: key_pressed_count 2 keycode 226
+uart:~$ [00:00:19.413,543] <dbg> zmk: keycode_state_changed_listener: 15 capturing 0xE2 up event
+uart:~$ [00:00:19.413,543] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:19.413,574] <dbg> zmk: on_hold_tap_binding_released: 14 cleaning up hold-tap
+uart:~$ [00:00:19.474,517] <dbg> zmk: decide_hold_tap: 15 decided hold-timer (tap-preferred decision moment timer)
+uart:~$ [00:00:19.474,548] <dbg> zmk: on_keymap_binding_pressed: position 15 keycode 0x700E1
+uart:~$ [00:00:19.474,578] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0xE1 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.474,578] <dbg> zmk: zmk_hid_register_mod: Modifier 1 count 1
+uart:~$ [00:00:19.474,609] <dbg> zmk: zmk_hid_register_mod: Modifiers set to 0x06
+uart:~$ [00:00:19.474,639] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x06
+uart:~$ [00:00:19.474,639] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.474,731] <dbg> zmk: release_captured_events: Releasing mods changed event 0xE2 released
+uart:~$ [00:00:19.474,761] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0xE2 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.474,761] <dbg> zmk: zmk_hid_unregister_mod: Modifier 2 count: 0
+uart:~$ [00:00:19.474,792] <dbg> zmk: zmk_hid_unregister_mod: Modifier 2 released
+uart:~$ [00:00:19.474,792] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x02
+uart:~$ [00:00:19.474,822] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x02
+uart:~$ [00:00:19.474,822] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.476,257] <dbg> zmk: kscan_matrix_read: Sending event at 1,4 state on
+uart:~$ [00:00:19.476,379] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 4, position: 16, pressed: true
+uart:~$ [00:00:19.476,409] <dbg> zmk: position_state_changed_listener: 16 bubble (no undecided hold_tap active)
+uart:~$ [00:00:19.476,440] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 16, binding name: homerow_mods_left
+uart:~$ [00:00:19.476,501] <dbg> zmk: on_hold_tap_binding_pressed: 16 new undecided hold_tap
+uart:~$ [00:00:19.522,186] <dbg> zmk: kscan_matrix_read: Sending event at 1,3 state off
+uart:~$ [00:00:19.522,308] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 3, position: 15, pressed: false
+uart:~$ [00:00:19.522,369] <dbg> zmk: position_state_changed_listener: 16 bubbling 15 up event
+uart:~$ [00:00:19.522,399] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 15, binding name: homerow_mods_left
+uart:~$ [00:00:19.522,491] <dbg> zmk: on_keymap_binding_released: position 15 keycode 0x700E1
+uart:~$ [00:00:19.522,491] <dbg> zmk: wpm_event_listener: key_pressed_count 3 keycode 225
+uart:~$ [00:00:19.522,521] <dbg> zmk: keycode_state_changed_listener: 16 capturing 0xE1 up event
+uart:~$ [00:00:19.522,552] <dbg> zmk: zmk_event_manager_handle_from: Listener captured the event
+uart:~$ [00:00:19.522,583] <dbg> zmk: on_hold_tap_binding_released: 15 cleaning up hold-tap
+uart:~$ [00:00:19.566,162] <dbg> zmk: kscan_matrix_read: Sending event at 1,4 state off
+uart:~$ [00:00:19.566,284] <dbg> zmk: zmk_physical_layouts_kscan_process_msgq: Row: 1, col: 4, position: 16, pressed: false
+uart:~$ [00:00:19.566,314] <dbg> zmk: position_state_changed_listener: 16 bubble undecided hold-tap keyrelease event
+uart:~$ [00:00:19.566,375] <dbg> zmk: zmk_keymap_apply_position_state: layer_id: 0 position: 16, binding name: homerow_mods_left
+uart:~$ [00:00:19.566,467] <dbg> zmk: decide_hold_tap: 16 decided tap (tap-preferred decision moment key-up)
+uart:~$ [00:00:19.566,497] <dbg> zmk: on_keymap_binding_pressed: position 16 keycode 0x70009
+uart:~$ [00:00:19.566,528] <dbg> zmk: hid_listener_keycode_pressed: usage_page 0x07 keycode 0x09 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.566,558] <dbg> zmk: zmk_hid_implicit_modifiers_press: Modifiers set to 0x02
+uart:~$ [00:00:19.566,558] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.566,650] <dbg> zmk: release_captured_events: Releasing mods changed event 0xE1 released
+uart:~$ [00:00:19.566,680] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0xE1 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.566,680] <dbg> zmk: zmk_hid_unregister_mod: Modifier 1 count: 0
+uart:~$ [00:00:19.566,711] <dbg> zmk: zmk_hid_unregister_mod: Modifier 1 released
+uart:~$ [00:00:19.566,711] <dbg> zmk: zmk_hid_unregister_mod: Modifiers set to 0x00
+uart:~$ [00:00:19.566,741] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:19.566,741] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.567,077] <dbg> zmk: on_keymap_binding_released: position 16 keycode 0x70009
+uart:~$ [00:00:19.567,108] <dbg> zmk: wpm_event_listener: key_pressed_count 4 keycode 9
+uart:~$ [00:00:19.567,138] <dbg> zmk: hid_listener_keycode_released: usage_page 0x07 keycode 0x09 implicit_mods 0x00 explicit_mods 0x00
+uart:~$ [00:00:19.567,138] <dbg> zmk: zmk_hid_implicit_modifiers_release: Modifiers set to 0x00
+uart:~$ [00:00:19.567,169] <dbg> zmk: zmk_endpoints_send_report: usage page 0x07
+uart:~$ [00:00:19.568,115] <dbg> zmk: on_hold_tap_binding_released: 16 cleaning up hold-tap
+uart:~$ uart:~$ uart:~$ [00:00:20.301,971] <dbg> zmk: wpm_work_handler: Raised WPM state changed 9 wpm_update_counter 5
+uart:~$ uart:~$ [00:00:21.301,940] <dbg> zmk: wpm_work_handler: Raised WPM state changed 0 wpm_update_counter 1
+uart:~$ uart:~$ [00:00:21.438,812] <dbg> bt_gatt: bt_gatt_notification: handle 0x0012 length 1
+uart:~$ [00:00:21.438,842] <dbg> zmk: split_central_battery_level_notify_func: [BATTERY LEVEL NOTIFICATION] data 0x20029f57 length 1
+uart:~$ [00:00:21.438,873] <dbg> zmk: split_central_battery_level_notify_func: Battery level: 95
+uart:~$ [00:00:21.438,934] <dbg> zmk: peripheral_event_work_callback: Trigger key position state change for 95
+uart:~$ [00:00:21.438,934] <dbg> zmk: peripheral_batt_lvl_listener: Peripheral battery level event: 95
+uart:~$ [00:00:21.438,995] <dbg> zmk: zmk_usb_get_conn_state: state: 3
+uart:~$ uart:~$ [00:00:30.312,835] <dbg> zmk: bvd_sample_fetch: ADC raw 1596 ~ 1402 mV => 4151 mV
+uart:~$ [00:00:30.312,866] <dbg> zmk: bvd_sample_fetch: Percent: 94
+uart:~$ uart:~$ 

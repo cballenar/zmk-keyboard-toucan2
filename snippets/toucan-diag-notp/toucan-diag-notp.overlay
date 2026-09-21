@@ -1,0 +1,31 @@
+/* USB console (same as toucan-diag-log). */
+/ {
+    chosen {
+        zephyr,console = &toucan_diag_uart;
+        zephyr,shell-uart = &toucan_diag_uart;
+    };
+};
+
+&zephyr_udc0 {
+    toucan_diag_uart: toucan_diag_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
+/*
+ * Remove the trackpad path entirely. All three must be disabled together:
+ * `trackpad_split` holds a phandle to `tps43_trackpad`, and ZMK's
+ * input_split.c does DEVICE_DT_GET() on it, which fails to link if the
+ * target node is disabled while the split node is still "okay".
+ */
+&i2c0 {
+    status = "disabled";
+};
+
+&tps43_trackpad {
+    status = "disabled";
+};
+
+&trackpad_split {
+    status = "disabled";
+};

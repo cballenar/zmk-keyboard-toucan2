@@ -1,0 +1,6 @@
+config TOUCAN_DIAG_SHELL
+    bool "Toucan diagnostic shell commands (dfu reboot, etc.)"
+    depends on SHELL
+    help
+      Adds a `dfu` shell command that reboots into the UF2 bootloader, so the
+      board can be reflashed without reaching the physical reset button.

@@ -1,0 +1,7 @@
+# Diagnostic: USB CDC-ACM console with verbose kscan / input / split logging.
+# Equivalent to ZMK's `zmk-usb-logging` snippet plus raised log levels for the
+# subsystems involved in the right-half input path.
+name: toucan-diag-log
+append:
+  EXTRA_CONF_FILE: toucan-diag-log.conf
+  EXTRA_DTC_OVERLAY_FILE: toucan-diag-log.overlay

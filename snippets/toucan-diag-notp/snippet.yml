@@ -1,0 +1,7 @@
+# Diagnostic: build the right half with the Azoteq trackpad and its I2C bus
+# completely removed, so the key matrix can be tested in isolation.
+# Includes the same USB console logging as `toucan-diag-log`.
+name: toucan-diag-notp
+append:
+  EXTRA_CONF_FILE: toucan-diag-notp.conf
+  EXTRA_DTC_OVERLAY_FILE: toucan-diag-notp.overlay
