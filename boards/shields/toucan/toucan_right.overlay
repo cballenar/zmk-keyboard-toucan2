@@ -71,7 +71,7 @@
         two-finger-tap;
         single-tap;
         // press-and-hold;
-        swipes;
+        // swipes;
         three-finger-swipe;
         three-finger-swipe-throttle-ms = <1200>;
         switch-xy;
